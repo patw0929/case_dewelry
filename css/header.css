@@ -1,6 +1,7 @@
 /* line 2, ../sass/header.scss */
 div.header_wrap {
   position: relative;
+  border-bottom: 1px dashed #b9b8a6;
 }
 /* line 5, ../sass/header.scss */
 div.header_wrap nav.sub_nav {

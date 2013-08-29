@@ -1,6 +1,51 @@
 /* line 3, ../sass/footer.scss */
-.footer {
+footer.footer {
+  margin-top: 50px;
+  height: 34px;
+  background-color: #5e513d;
+}
+/* line 8, ../sass/footer.scss */
+footer.footer div.footer_inner {
   width: 1024px;
-  border: 1px solid black;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+  /*social icon*/
+  /*人員招募與隱私*/
+}
+/* line 13, ../sass/footer.scss */
+footer.footer div.footer_inner p.rights {
+  color: #9f907a;
+  margin: -6px 0 0 0;
+  padding: 0;
+}
+/* line 21, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon {
+  width: 83px;
+  height: 20px;
+  margin: 0 auto;
+  background-image: url("../images/footer/footer_social_bg.png");
+  position: relative;
+  top: -4px;
+  padding: 0;
+}
+/* line 35, ../sass/footer.scss */
+footer.footer div.footer_inner div.job_and_privacy {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+/* line 40, ../sass/footer.scss */
+footer.footer div.footer_inner div.job_and_privacy a {
+  width: 80px;
+  height: 20px;
+  background: url("../images/footer/bg_round.png") no-repeat;
+  font-size: .8em;
+  display: inline-block;
+  color: #877966;
+  text-decoration: none;
+}
+/* line 48, ../sass/footer.scss */
+footer.footer div.footer_inner div.job_and_privacy a:hover {
+  color: #afa194;
 }

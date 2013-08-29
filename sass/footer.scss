@@ -1,7 +1,57 @@
 @import "variables_custom";
 
-.footer{
-	width:$layout_width;
-	border:1px solid black;
-	margin:0 auto;
+footer.footer{
+	margin-top:50px;
+	height:34px;
+	background-color: rgb(94, 81, 61);
+	
+	div.footer_inner{
+		width:$layout_width;
+		margin:0 auto;
+		text-align: center;
+		position:relative;
+		p.rights{
+			color:rgb(159, 144, 122);
+			margin:-6px 0 0 0;
+			padding:0;
+		}
+		
+		
+		/*social icon*/
+		div.social_icon{
+			
+			width:83px;
+			height:20px;
+			margin:0 auto;
+			background-image: url("../images/footer/footer_social_bg.png");
+			position:relative;
+			top:-4px;
+			padding:0;
+			
+			
+		}
+		
+		/*人員招募與隱私*/
+		div.job_and_privacy{
+			position: absolute;
+			right:0;
+			top:12px;
+			
+			a{
+				width:80px;
+				height:20px;
+				background: url("../images/footer/bg_round.png") no-repeat;
+				font-size: .8em;
+				display: inline-block;
+				color:rgb(135, 121, 102);
+				text-decoration: none;
+				&:hover{
+					color:rgb(175, 161, 148);
+				}
+			}
+		}
+		
+	}
+	
+	
 }
