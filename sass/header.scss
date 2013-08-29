@@ -1,0 +1,73 @@
+@import "variables_custom";
+
+header.header{
+	width:$layout_width;
+	
+	margin:10px auto 0 auto;
+	
+	div.logo{
+		width:140px;
+		margin:0 auto;
+	}
+	
+	/*主導覽列*/
+	nav.main_nav{
+		
+		margin-top:10px;
+		
+		ul.main_nav_ul{
+			
+			margin-left:0;
+			margin-bottom:0;
+			padding-left:30px;
+			li{
+				position:relative;
+				display:inline-block;
+				width:135px;
+				text-align: center;
+				height:30px;
+				line-height: 30px;
+				font-size:.8em;
+				
+				img.d_line{
+					float:right;
+					position:relative;
+					bottom:-8px;
+					
+				}
+				
+				
+				a{
+					color:rgb(198, 188, 146);
+					cursor:pointer;
+					text-decoration: none;
+					
+					img.item_icon{
+						position: relative;
+						display: inline-block;
+						margin-right:5px;
+						top:-2px;
+					}
+					
+					&:hover{
+						color:rgb(147, 31, 68);
+					}
+				}
+				
+				
+				
+				img.hinter{
+					position:absolute;
+					left:40px;
+					top:25px;
+					display:none;
+				}
+				
+				
+				
+			}
+		}
+		
+	}
+	
+}

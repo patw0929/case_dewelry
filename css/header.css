@@ -1,0 +1,61 @@
+/* line 3, ../sass/header.scss */
+header.header {
+  width: 1024px;
+  margin: 10px auto 0 auto;
+  /*主導覽列*/
+}
+/* line 8, ../sass/header.scss */
+header.header div.logo {
+  width: 140px;
+  margin: 0 auto;
+}
+/* line 14, ../sass/header.scss */
+header.header nav.main_nav {
+  margin-top: 10px;
+}
+/* line 18, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+/* line 23, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li {
+  position: relative;
+  display: inline-block;
+  width: 135px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: .8em;
+}
+/* line 32, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li img.d_line {
+  float: right;
+  position: relative;
+  bottom: -8px;
+}
+/* line 40, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li a {
+  color: #c6bc92;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 45, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li a img.item_icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  top: -2px;
+}
+/* line 52, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li a:hover {
+  color: #931f44;
+}
+/* line 59, ../sass/header.scss */
+header.header nav.main_nav ul.main_nav_ul li img.hinter {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  display: none;
+}

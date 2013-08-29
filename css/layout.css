@@ -1,0 +1,7 @@
+/* line 3, ../sass/layout.scss */
+div.middle_container {
+  width: 1024px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-color: gray;
+}
