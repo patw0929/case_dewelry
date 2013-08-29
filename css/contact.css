@@ -10,7 +10,7 @@
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/title_contact.png?1377784035');
+  background-image: url('/images/title_contact.png?1377783962');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 0;
@@ -88,7 +88,15 @@ form {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 73, ../sass/contact.scss */
+/* line 72, ../sass/contact.scss */
+.inputs input#date_y, .inputs input#date_m, .inputs input#date_d {
+  width: 60px;
+}
+/* line 77, ../sass/contact.scss */
+.inputs span.date_slash {
+  color: #b1939f;
+}
+/* line 81, ../sass/contact.scss */
 .inputs textarea {
   width: 95%;
   height: 150px;
@@ -104,7 +112,7 @@ form {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 82, ../sass/contact.scss */
+/* line 90, ../sass/contact.scss */
 .inputs textarea:focus {
   border: 0 !important;
   -webkit-box-shadow: none;
@@ -112,7 +120,7 @@ form {
   box-shadow: none;
 }
 
-/* line 89, ../sass/contact.scss */
+/* line 97, ../sass/contact.scss */
 button {
   display: inline-block;
   border: 0;
@@ -124,21 +132,21 @@ button {
   overflow: hidden;
 }
 
-/* line 100, ../sass/contact.scss */
+/* line 108, ../sass/contact.scss */
 button:first-letter {
   margin-left: -20em;
 }
 
-/* line 104, ../sass/contact.scss */
+/* line 112, ../sass/contact.scss */
 .row-fluid .span12 {
   margin: 0;
 }
-/* line 107, ../sass/contact.scss */
+/* line 115, ../sass/contact.scss */
 .row-fluid .span12 .inputs {
   height: 195px;
 }
 
-/* line 112, ../sass/contact.scss */
+/* line 120, ../sass/contact.scss */
 .visual {
   padding-top: 50px;
 }

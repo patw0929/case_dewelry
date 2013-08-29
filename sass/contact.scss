@@ -68,6 +68,14 @@ form {
             border:0 !important;
             @include box-shadow(none);
         }
+        
+        &#date_y, &#date_m, &#date_d{
+	        width:60px;
+        }
+        
+    }
+    span.date_slash{
+	  	color:rgb(177, 147, 159);
     }
 
     textarea {
