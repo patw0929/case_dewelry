@@ -1,0 +1,25 @@
+@import "compass/utilities/text/replacement";
+
+.content {
+
+    h1 {
+        width: 183px;
+        height: 37px;
+        @include replace-text("title_contact.png");
+        margin: 0;
+    }
+
+    hr {
+        display : list-item;
+        list-style : url(../images/hr.png) inside;
+        filter : alpha(opacity=0);
+        width : 0;
+        margin: 0;
+    }
+
+    .tip {
+        color: #c0b29b;
+        font-size: .3em;
+    }
+
+}

@@ -1,0 +1,25 @@
+/* line 5, ../sass/contact.scss */
+.content h1 {
+  width: 183px;
+  height: 37px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/title_contact.png?1377773868');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 0;
+}
+/* line 12, ../sass/contact.scss */
+.content hr {
+  display: list-item;
+  list-style: url(../images/hr.png) inside;
+  filter: alpha(opacity=0);
+  width: 0;
+  margin: 0;
+}
+/* line 20, ../sass/contact.scss */
+.content .tip {
+  color: #c0b29b;
+  font-size: .3em;
+}

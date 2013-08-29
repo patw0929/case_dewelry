@@ -1,8 +1,12 @@
 @import "variables_custom";
+@import "compass/utilities/general/clearfix";
 
-div.middle_container{
-	width:$layout_width;
-	border:1px solid black;
-	margin:0 auto;
-	background-color: gray;
+div.middle_container {
+	width: $layout_width;
+	margin: 0 auto;
+    @include clearfix;
+}
+
+.main {
+    padding-top: 50px;
 }

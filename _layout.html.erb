@@ -30,7 +30,7 @@
 	
 	
 	
-	<%= yield :index_content %>
+	<%= yield :header_content %>
 	
 	
 </head>
@@ -38,8 +38,10 @@
 
 		<%= render :partial => "header" %>
 		
-		<div class="middle_container">
+		<div class="middle_container container-fluid">
+			<div div class="main row-fluid">
 			<%= yield %>
+			</div>
 		</div><!-- end class content -->
 		
 		<%= render :partial => "footer" %>
