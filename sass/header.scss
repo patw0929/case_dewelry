@@ -2,10 +2,11 @@
 div.header_wrap{
 	position:relative;
 	
-	nav.sub_nav_wedding{
+	nav.sub_nav{
+		display:none;
 		width:100%;
 		height:105px;
-		background: url("../images/subnav/bg_shadow2.png") no-repeat;
+		background: url("../images/subnav/bg_shadow.png") no-repeat;
 		background-position: center;
 		position: absolute;
 		div.bg_color{
@@ -15,14 +16,38 @@ div.header_wrap{
 		}
 		
 		/*wedding次選單*/
-		ul.sub_nav_wedding_ul{
+		ul.sub_nav_wedding_ul, ul.sub_nav_jewelry_ul{
+			display:none;
 			margin-left:0;
+			text-align: center;
 			li{
+				width:144px;
 				display: inline-block;
-				border:1px dotted rgb(210, 199, 165);
+				border-right:1px dotted rgb(210, 199, 165);
 				height:98px;
+				cursor: pointer;
+				line-height:38px;
+				font-size:.8em;
+				margin-left:-4px;
+				&.first{
+					border-left:1px dotted rgb(210, 199, 165);
+				}
+				&:hover{
+					background: url("../images/subnav/bg.png") no-repeat;
+				}
+				a{
+					color:rgb(198, 188, 146);
+					text-decoration: none;
+					img{
+						display:block;
+						margin:10px auto 0 auto;
+					}
+				}
 			}
+			
 		}
+		
+		
 		
 	}
 	
