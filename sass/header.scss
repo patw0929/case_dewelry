@@ -53,9 +53,8 @@ div.header_wrap{
 	
 	header.header{
 		width:$layout_width;
-		
 		margin:10px auto 0 auto;
-		
+		position:relative;
 		div.logo{
 			width:140px;
 			margin:0 auto;
@@ -123,6 +122,20 @@ div.header_wrap{
 			
 		}
 		
+		
+		/*麵包屑*/
+		div.page_breadcrumb{
+			position:absolute;
+			right:0;
+			a{
+				color:rgb(198, 188, 146);
+			}
+			top:100px;
+		}
+		
 	}
+	
+	
+	
 }
 

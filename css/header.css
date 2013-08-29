@@ -57,24 +57,26 @@ div.header_wrap nav.sub_nav ul.sub_nav_wedding_ul li a img, div.header_wrap nav.
 div.header_wrap header.header {
   width: 1024px;
   margin: 10px auto 0 auto;
+  position: relative;
   /*主導覽列*/
+  /*麵包屑*/
 }
-/* line 59, ../sass/header.scss */
+/* line 58, ../sass/header.scss */
 div.header_wrap header.header div.logo {
   width: 140px;
   margin: 0 auto;
 }
-/* line 65, ../sass/header.scss */
+/* line 64, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav {
   margin-top: 10px;
 }
-/* line 69, ../sass/header.scss */
+/* line 68, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul {
   margin-left: 0;
   margin-bottom: 0;
   padding-left: 30px;
 }
-/* line 74, ../sass/header.scss */
+/* line 73, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li {
   position: relative;
   display: inline-block;
@@ -85,34 +87,44 @@ div.header_wrap header.header nav.main_nav ul.main_nav_ul li {
   line-height: 30px;
   font-size: .8em;
 }
-/* line 84, ../sass/header.scss */
+/* line 83, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li img.d_line {
   float: right;
   position: relative;
   bottom: -8px;
 }
-/* line 92, ../sass/header.scss */
+/* line 91, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li a {
   color: #c6bc92;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 97, ../sass/header.scss */
+/* line 96, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li a img.item_icon {
   position: relative;
   display: inline-block;
   margin-right: 5px;
   top: -2px;
 }
-/* line 104, ../sass/header.scss */
+/* line 103, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li a:hover {
   color: #931f44;
 }
-/* line 111, ../sass/header.scss */
+/* line 110, ../sass/header.scss */
 div.header_wrap header.header nav.main_nav ul.main_nav_ul li img.hinter {
   position: absolute;
   left: 40px;
   top: 25px;
   display: none;
   z-index: 9999;
+}
+/* line 127, ../sass/header.scss */
+div.header_wrap header.header div.page_breadcrumb {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+/* line 130, ../sass/header.scss */
+div.header_wrap header.header div.page_breadcrumb a {
+  color: #c6bc92;
 }
