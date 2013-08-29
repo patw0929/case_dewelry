@@ -6,36 +6,42 @@ var hover_in = function (theElement, item) {
 
 	mcancelclosetime();
 
-	var parent_li = theElement.parentNode;
-	$(parent_li).children('img[class=hinter]').css("display", "block");
+	var parent_li = theElement.parent();
+	$('li:not(.on)').find('img[class=hinter]').hide();
+	$(parent_li).find('img[class=hinter]').show();
 	
+	$("nav.sub_nav").hide();
+	$('.sub_nav_' + item + '_ul').siblings().hide();
+
 	//將次選單顯示出來
-	switch(item){
-		case 'wedding':
-			$("nav.sub_nav").css("display", "block");
-			$("ul.sub_nav_wedding_ul").css("display", "block");
-			break;
-		case 'jewelry':
-			$("nav.sub_nav").css("display", "block");
-			$("ul.sub_nav_jewelry_ul").css("display", "block");
-			break;
+	switch(item) {
+	case 'wedding':
+		$("nav.sub_nav").show();
+		$("ul.sub_nav_wedding_ul").show();
+		break;
+
+	case 'jewelry':
+		$("nav.sub_nav").show();
+		$("ul.sub_nav_jewelry_ul").show();
+		break;
 	}
 };
 
 var hover_out = function (theElement, item) {
-	var parent_li = theElement.parentNode;
-	$(parent_li).children('img[class=hinter]').css("display", "none");
+
+	var parent_li = theElement.parent();
+	$(parent_li).find('img[class=hinter]').hide();
 	
 	// 將次選單隱藏起來
 	switch (item) {
 	case 'wedding':
-		$("nav.sub_nav").css("display", "none");
-		$("ul.sub_nav_wedding_ul").css("display", "none");
+		$("nav.sub_nav").hide();
+		$("ul.sub_nav_wedding_ul").hide();
 		break;
 
 	case 'jewelry':
-		$("nav.sub_nav").css("display", "none");
-		$("ul.sub_nav_jewelry_ul").css("display", "none");
+		$("nav.sub_nav").hide();
+		$("ul.sub_nav_jewelry_ul").hide();
 		break;
 	}
 };
@@ -54,3 +60,33 @@ var mcancelclosetime = function () {
 		closetimer = null;
 	}
 };
+
+
+$(function () {
+
+	$('.main_nav_ul > li').on('mouseover', 'a', function () {
+
+		var that = $(this);
+		hover_in(that, that.data('category'));
+
+	}).on('mouseout', 'a', function () {
+
+		var that = $(this);
+		mclosetime(that, that.data('category'));
+
+	});
+
+	$('.sub_nav ul').on('mouseover', function () {
+
+		mcancelclosetime();
+
+	}).on('mouseout', function () {
+
+		var that = $(this),
+			category = that.data('category');
+
+		mclosetime($('.item_' + category + ' > a'), category);
+
+	});
+
+});
