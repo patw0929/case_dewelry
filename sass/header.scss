@@ -1,74 +1,103 @@
 @import "variables_custom";
-
-header.header{
-	width:$layout_width;
+div.header_wrap{
+	position:relative;
 	
-	margin:10px auto 0 auto;
-	
-	div.logo{
-		width:140px;
-		margin:0 auto;
-	}
-	
-	/*主導覽列*/
-	nav.main_nav{
+	nav.sub_nav_wedding{
+		width:100%;
+		height:105px;
+		background: url("../images/subnav/bg_shadow2.png") no-repeat;
+		background-position: center;
+		position: absolute;
+		div.bg_color{
+			background-color: rgb(250, 248, 243);
+			width:100%;
+			height:98px;
+		}
 		
-		margin-top:10px;
-		
-		ul.main_nav_ul{
-			
+		/*wedding次選單*/
+		ul.sub_nav_wedding_ul{
 			margin-left:0;
-			margin-bottom:0;
-			padding-left:30px;
 			li{
-				position:relative;
-				display:inline-block;
-				*display: inline;
-				width:135px;
-				text-align: center;
-				height:30px;
-				line-height: 30px;
-				font-size:.8em;
-				
-				img.d_line{
-					float:right;
-					position:relative;
-					bottom:-8px;
-					
-				}
-				
-				
-				a{
-					color:rgb(198, 188, 146);
-					cursor:pointer;
-					text-decoration: none;
-					
-					img.item_icon{
-						position: relative;
-						display: inline-block;
-						margin-right:5px;
-						top:-2px;
-					}
-					
-					&:hover{
-						color:rgb(147, 31, 68);
-					}
-				}
-				
-				
-				
-				img.hinter{
-					position:absolute;
-					left:40px;
-					top:25px;
-					display:none;
-				}
-				
-				
-				
+				display: inline-block;
+				border:1px dotted rgb(210, 199, 165);
+				height:98px;
 			}
 		}
 		
 	}
 	
+	header.header{
+		width:$layout_width;
+		
+		margin:10px auto 0 auto;
+		
+		div.logo{
+			width:140px;
+			margin:0 auto;
+		}
+		
+		/*主導覽列*/
+		nav.main_nav{
+			
+			margin-top:10px;
+			
+			ul.main_nav_ul{
+				
+				margin-left:0;
+				margin-bottom:0;
+				padding-left:30px;
+				li{
+					position:relative;
+					display:inline-block;
+					*display: inline;
+					width:135px;
+					text-align: center;
+					height:30px;
+					line-height: 30px;
+					font-size:.8em;
+					
+					img.d_line{
+						float:right;
+						position:relative;
+						bottom:-8px;
+						
+					}
+					
+					
+					a{
+						color:rgb(198, 188, 146);
+						cursor:pointer;
+						text-decoration: none;
+						
+						img.item_icon{
+							position: relative;
+							display: inline-block;
+							margin-right:5px;
+							top:-2px;
+						}
+						
+						&:hover{
+							color:rgb(147, 31, 68);
+						}
+					}
+					
+					
+					
+					img.hinter{
+						position:absolute;
+						left:40px;
+						top:25px;
+						display:none;
+						z-index: 9999;
+					}
+					
+					
+					
+				}
+			}
+			
+		}
+		
+	}
 }
+

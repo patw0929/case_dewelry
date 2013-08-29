@@ -1,26 +1,55 @@
-/* line 3, ../sass/header.scss */
-header.header {
+/* line 2, ../sass/header.scss */
+div.header_wrap {
+  position: relative;
+}
+/* line 5, ../sass/header.scss */
+div.header_wrap nav.sub_nav_wedding {
+  width: 100%;
+  height: 105px;
+  background: url("../images/subnav/bg_shadow2.png") no-repeat;
+  background-position: center;
+  position: absolute;
+  /*wedding次選單*/
+}
+/* line 11, ../sass/header.scss */
+div.header_wrap nav.sub_nav_wedding div.bg_color {
+  background-color: #faf8f3;
+  width: 100%;
+  height: 98px;
+}
+/* line 18, ../sass/header.scss */
+div.header_wrap nav.sub_nav_wedding ul.sub_nav_wedding_ul {
+  margin-left: 0;
+}
+/* line 20, ../sass/header.scss */
+div.header_wrap nav.sub_nav_wedding ul.sub_nav_wedding_ul li {
+  display: inline-block;
+  border: 1px dotted #d2c7a5;
+  height: 98px;
+}
+/* line 29, ../sass/header.scss */
+div.header_wrap header.header {
   width: 1024px;
   margin: 10px auto 0 auto;
   /*主導覽列*/
 }
-/* line 8, ../sass/header.scss */
-header.header div.logo {
+/* line 34, ../sass/header.scss */
+div.header_wrap header.header div.logo {
   width: 140px;
   margin: 0 auto;
 }
-/* line 14, ../sass/header.scss */
-header.header nav.main_nav {
+/* line 40, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav {
   margin-top: 10px;
 }
-/* line 18, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul {
+/* line 44, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul {
   margin-left: 0;
   margin-bottom: 0;
   padding-left: 30px;
 }
-/* line 23, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li {
+/* line 49, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li {
   position: relative;
   display: inline-block;
   *display: inline;
@@ -30,33 +59,34 @@ header.header nav.main_nav ul.main_nav_ul li {
   line-height: 30px;
   font-size: .8em;
 }
-/* line 33, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li img.d_line {
+/* line 59, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li img.d_line {
   float: right;
   position: relative;
   bottom: -8px;
 }
-/* line 41, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li a {
+/* line 67, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li a {
   color: #c6bc92;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 46, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li a img.item_icon {
+/* line 72, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li a img.item_icon {
   position: relative;
   display: inline-block;
   margin-right: 5px;
   top: -2px;
 }
-/* line 53, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li a:hover {
+/* line 79, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li a:hover {
   color: #931f44;
 }
-/* line 60, ../sass/header.scss */
-header.header nav.main_nav ul.main_nav_ul li img.hinter {
+/* line 86, ../sass/header.scss */
+div.header_wrap header.header nav.main_nav ul.main_nav_ul li img.hinter {
   position: absolute;
   left: 40px;
   top: 25px;
   display: none;
+  z-index: 9999;
 }
