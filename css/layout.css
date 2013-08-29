@@ -5,8 +5,3 @@ div.middle_container {
   overflow: hidden;
   *zoom: 1;
 }
-
-/* line 10, ../sass/layout.scss */
-.main {
-  padding-top: 50px;
-}

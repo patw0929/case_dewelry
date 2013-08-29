@@ -1,16 +1,21 @@
-/* line 5, ../sass/contact.scss */
+/* line 3, ../sass/contact.scss */
+.content {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+/* line 8, ../sass/contact.scss */
 .content h1 {
   width: 183px;
   height: 37px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/title_contact.png?1377773868');
+  background-image: url('/images/title_contact.png?1377778569');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 0;
 }
-/* line 12, ../sass/contact.scss */
+/* line 15, ../sass/contact.scss */
 .content hr {
   display: list-item;
   list-style: url(../images/hr.png) inside;
@@ -18,8 +23,8 @@
   width: 0;
   margin: 0;
 }
-/* line 20, ../sass/contact.scss */
+/* line 23, ../sass/contact.scss */
 .content .tip {
   color: #c0b29b;
-  font-size: .3em;
+  font-size: .9em;
 }
