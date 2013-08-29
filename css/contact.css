@@ -17,14 +17,23 @@
 }
 /* line 15, ../sass/contact.scss */
 .content hr {
-  display: list-item;
-  list-style: url(../images/hr.png) inside;
-  filter: alpha(opacity=0);
-  width: 0;
-  margin: 0;
+  border: 0;
+  height: 15px;
+  background: url(../images/hr.png) 50% 0 no-repeat;
+  margin: 1em 0;
+  *display: list-item;
+  *list-style: url(../images/hr.png) inside;
+  *filter: alpha(opacity=0);
+  *width: 0;
+  *margin: 0;
 }
-/* line 23, ../sass/contact.scss */
+/* line 27, ../sass/contact.scss */
 .content .tip {
   color: #c0b29b;
   font-size: .9em;
+}
+
+/* line 34, ../sass/contact.scss */
+.visual {
+  padding-top: 50px;
 }
