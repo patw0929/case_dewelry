@@ -115,7 +115,16 @@ div.header_wrap{
 						z-index: 9999;
 					}
 					
-					
+					&.on{
+						a{
+							color:rgb(235, 183, 185);
+							
+						}
+						img.hinter{
+							display:block;
+						}
+						
+					}
 					
 				}
 			}
