@@ -7,43 +7,43 @@
 		<nav class="main_nav">
 			<ul class="main_nav_ul">
 				<li class="item_story">
-					<a href="#" onmouseover="hover_in(this, 'story')" onmouseout="hover_out(this, 'story')"><img src="./images/icon_story.png" class="item_icon">STORY</a>
+					<a href="#" onmouseover="hover_in(this, 'story')" onmouseout="mclosetime(this, 'story')"><img src="./images/icon_story.png" class="item_icon">STORY</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_news">
-					<a href="#" onmouseover="hover_in(this, 'news')" onmouseout="hover_out(this, 'news')"><img src="./images/icon_news.png" class="item_icon">NEWS</a>
+					<a href="#" onmouseover="hover_in(this, 'news')" onmouseout="mclosetime(this, 'news')"><img src="./images/icon_news.png" class="item_icon">NEWS</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_wedding">
-					<a href="#" onmouseover="hover_in(this, 'wedding')" onmouseout="hover_out(this, 'wedding')"><img src="./images/icon_wedding.png" class="item_icon">WEDDING</a>
+					<a href="#" onmouseover="hover_in(this, 'wedding')" onmouseout="mclosetime(this, 'wedding')"><img src="./images/icon_wedding.png" class="item_icon">WEDDING</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_jewelry">
-					<a href="#" onmouseover="hover_in(this, 'jewelry')" onmouseout="hover_out(this, 'jewelry')"><img src="./images/icon_jewelry.png" class="item_icon">JEWELRY</a>
+					<a href="#" onmouseover="hover_in(this, 'jewelry')" onmouseout="mclosetime(this, 'jewelry')"><img src="./images/icon_jewelry.png" class="item_icon">JEWELRY</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_locations">
-					<a href="#" onmouseover="hover_in(this, 'locations')" onmouseout="hover_out(this, 'locations')"><img src="./images/icon_locations.png" class="item_icon">LOCATIONS</a>
+					<a href="#" onmouseover="hover_in(this, 'locations')" onmouseout="mclosetime(this, 'locations')"><img src="./images/icon_locations.png" class="item_icon">LOCATIONS</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_knowledge">
-					<a href="#" onmouseover="hover_in(this, 'knowledge')" onmouseout="hover_out(this, 'knowledge')"><img src="./images/icon_knowledge.png" class="item_icon">KNOWLEDGE</a>
+					<a href="#" onmouseover="hover_in(this, 'knowledge')" onmouseout="mclosetime(this, 'knowledge')"><img src="./images/icon_knowledge.png" class="item_icon">KNOWLEDGE</a>
 					<img src="./images/d_line.png" class="d_line">
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 				
 				<li class="item_contact">
-					<a href="contact.html" onmouseover="hover_in(this, 'contact')" onmouseout="hover_out(this, 'contact')"><img src="./images/icon_contact.png" class="item_icon">CONTACT</a>
+					<a href="contact.html" onmouseover="hover_in(this, 'contact')" onmouseout="mclosetime(this, 'contact')"><img src="./images/icon_contact.png" class="item_icon">CONTACT</a>
 					<img src="./images/sub_nav_arrow.png" class="hinter">
 				</li>
 			</ul>
@@ -54,14 +54,14 @@
 	<nav class="sub_nav">
 		<div class="bg_color">
 			<!-- wedding次選單 -->
-			<ul class="sub_nav_wedding_ul">
+			<ul class="sub_nav_wedding_ul" onmouseover="mcancelclosetime()" onmouseout="mclosetime($('.item_wedding > a')[0], 'wedding')">
 				<li class="first"><a href="#"><img src="./images/subnav/wedding/women_rings.png">WOMEN'S RINGS</a></li>
 				<li><a href="#"><img src="./images/subnav/wedding/wedding_rings.png">WEDDING RINGS</a></li>
 				<li><a href="#"><img src="./images/subnav/wedding/platinum_rings.png">PLATINUM RINGS</a></li>
 				<li><a href="#"><img src="./images/subnav/wedding/men_rings.png">MEN'S RINGS</a></li>
 			</ul>
 			<!-- jewelry次選單 -->
-			<ul class="sub_nav_jewelry_ul">
+			<ul class="sub_nav_jewelry_ul" onmouseover="mcancelclosetime()" onmouseout="mclosetime($('.item_jewelry > a')[0], 'jewelry')">
 				<li class="first"><a href="#"><img src="./images/subnav/jewelry/diamond_ring.png">DIAMOND RINGS</a></li>
 				<li><a href="#"><img src="./images/subnav/jewelry/diamond_necklace.png">DIAMOND NECKLACE</a></li>
 				<li><a href="#"><img src="./images/subnav/jewelry/diamond_earrings.png">DIAMOND EARRINGS</a></li>
