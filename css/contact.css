@@ -1,30 +1,144 @@
-/* line 3, ../sass/contact.scss */
+/* line 5, ../sass/contact.scss */
 .content {
-  padding-top: 50px;
-  padding-left: 50px;
+  padding: 50px 0 50px 50px;
+  *padding: 50px 0 0 0;
 }
-/* line 8, ../sass/contact.scss */
+/* line 10, ../sass/contact.scss */
 .content h1 {
   width: 183px;
   height: 37px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/title_contact.png?1377783962');
+  background-image: url('/images/title_contact.png?1377784035');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 0;
 }
-/* line 15, ../sass/contact.scss */
+/* line 17, ../sass/contact.scss */
 .content hr {
-  display: list-item;
-  list-style: url(../images/hr.png) inside;
-  filter: alpha(opacity=0);
-  width: 0;
-  margin: 0;
+  border: 0;
+  height: 15px;
+  background: url(../images/hr.png) 50% 0 no-repeat;
+  margin: 1em 0;
+  *display: list-item;
+  *list-style: url(../images/hr.png) inside;
+  *filter: alpha(opacity=0);
+  *width: 0;
+  *margin: 0;
 }
-/* line 23, ../sass/contact.scss */
+/* line 29, ../sass/contact.scss */
 .content .tip {
   color: #c0b29b;
   font-size: .9em;
+  letter-spacing: .15em;
+}
+
+/* line 37, ../sass/contact.scss */
+form {
+  margin: 0;
+}
+
+/* line 41, ../sass/contact.scss */
+.inputs {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+/* line 46, ../sass/contact.scss */
+.inputs > label {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding-left: 10px;
+  font-size: .9em;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  color: #b299a3;
+  background-color: #e4d9dc;
+}
+/* line 59, ../sass/contact.scss */
+.inputs input {
+  width: 90%;
+  margin: 0;
+  padding-left: 10px;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 67, ../sass/contact.scss */
+.inputs input:focus {
+  border: 0 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../sass/contact.scss */
+.inputs textarea {
+  width: 95%;
+  height: 150px;
+  margin: 0;
+  padding-left: 10px;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 82, ../sass/contact.scss */
+.inputs textarea:focus {
+  border: 0 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 89, ../sass/contact.scss */
+button {
+  display: inline-block;
+  border: 0;
+  background: url("../images/submit.png") no-repeat;
+  width: 88px;
+  height: 32px;
+  text-align: left;
+  letter-spacing: -3em;
+  overflow: hidden;
+}
+
+/* line 100, ../sass/contact.scss */
+button:first-letter {
+  margin-left: -20em;
+}
+
+/* line 104, ../sass/contact.scss */
+.row-fluid .span12 {
+  margin: 0;
+}
+/* line 107, ../sass/contact.scss */
+.row-fluid .span12 .inputs {
+  height: 195px;
+}
+
+/* line 112, ../sass/contact.scss */
+.visual {
+  padding-top: 50px;
 }

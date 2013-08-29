@@ -1,9 +1,11 @@
 @import "compass/utilities/text/replacement";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 
 .content {
 
-    padding-top: 50px;
-    padding-left: 50px;
+    padding: 50px 0 50px 50px;
+    *padding: 50px 0 0 0;
 
     h1 {
         width: 183px;
@@ -13,16 +15,100 @@
     }
 
     hr {
-        display : list-item;
-        list-style : url(../images/hr.png) inside;
-        filter : alpha(opacity=0);
-        width : 0;
-        margin: 0;
+        border: 0;
+        height: 15px;
+        background: url(../images/hr.png) 50% 0 no-repeat;
+        margin: 1em 0;
+        *display: list-item;
+        *list-style: url(../images/hr.png) inside;
+        *filter: alpha(opacity=0);
+        *width: 0;
+        *margin: 0;
     }
 
     .tip {
         color: #c0b29b;
         font-size: .9em;
+        letter-spacing: .15em;
     }
 
+}
+
+form {
+    margin: 0;
+}
+
+.inputs {
+    @include border-radius(10px);
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+
+    > label {
+        @include border-top-left-radius(10px);
+        @include border-top-right-radius(10px);
+        margin: 0;
+        padding-left: 10px;
+        font-size: .9em;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        color: #b299a3;
+        background-color: #e4d9dc;
+    }
+
+    input {
+        width: 90%;
+        margin: 0;
+        padding-left: 10px;
+        border: 0;
+        @include border-radius(10px);
+        @include box-shadow(none);
+
+        &:focus {
+            border:0 !important;
+            @include box-shadow(none);
+        }
+    }
+
+    textarea {
+        width: 95%;
+        height: 150px;
+        margin: 0;
+        padding-left: 10px;
+        border: 0;
+        @include border-radius(10px);
+        @include box-shadow(none);
+
+        &:focus {
+            border:0 !important;
+            @include box-shadow(none);
+        }
+    }
+}
+
+button {
+    display: inline-block;
+    border: 0;
+    background: url('../images/submit.png') no-repeat;
+    width: 88px;
+    height: 32px;
+    text-align: left;
+    letter-spacing: -3em;
+    overflow: hidden;
+}
+
+button:first-letter {
+    margin-left: -20em;
+}
+
+.row-fluid .span12 {
+    margin: 0;
+
+    .inputs {
+        height: 195px;
+    }
+}
+
+.visual {
+    padding-top: 50px;
 }
