@@ -1,25 +1,26 @@
-/* line 3, ../sass/footer.scss */
+/* line 4, ../sass/footer.scss */
 footer.footer {
   margin-top: 50px;
   height: 34px;
   background-color: #5e513d;
 }
-/* line 8, ../sass/footer.scss */
+/* line 9, ../sass/footer.scss */
 footer.footer div.footer_inner {
   width: 1024px;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  /*social icon*/
-  /*人員招募與隱私*/
+  /* social icon */
+  /* 人員招募與隱私 */
 }
-/* line 13, ../sass/footer.scss */
+/* line 15, ../sass/footer.scss */
 footer.footer div.footer_inner p.rights {
   color: #9f907a;
   margin: -6px 0 0 0;
   padding: 0;
+  font-size: .85em;
 }
-/* line 21, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon {
   width: 83px;
   height: 20px;
@@ -29,13 +30,78 @@ footer.footer div.footer_inner div.social_icon {
   top: -4px;
   padding: 0;
 }
-/* line 35, ../sass/footer.scss */
+/* line 32, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a {
+  display: inline-block;
+  margin-top: 4px;
+}
+/* line 37, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.facebook {
+  width: 16px;
+  height: 16px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_facebook.png?1377821111');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 42, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.facebook:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_facebook_hover.png?1377821111');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 47, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.googleplus {
+  width: 16px;
+  height: 16px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_google.png?1377882404');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 52, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.googleplus:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_google_hover.png?1377821111');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 57, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.email {
+  width: 16px;
+  height: 16px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_mail.png?1377821111');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 62, ../sass/footer.scss */
+footer.footer div.footer_inner div.social_icon a.email:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/footer/social_icon_mail_hover.png?1377821111');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 69, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy {
   position: absolute;
   right: 0;
   top: 12px;
 }
-/* line 40, ../sass/footer.scss */
+/* line 74, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy a {
   width: 80px;
   height: 20px;
@@ -45,7 +111,7 @@ footer.footer div.footer_inner div.job_and_privacy a {
   color: #877966;
   text-decoration: none;
 }
-/* line 48, ../sass/footer.scss */
+/* line 82, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy a:hover {
   color: #afa194;
 }

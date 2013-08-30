@@ -90,8 +90,3 @@ $(function () {
 	});
 
 });
-
-// 將footer的分享機制滑鼠移過換圖
-function change_pic(theElement, pic_url){
-	theElement.src = pic_url;
-}

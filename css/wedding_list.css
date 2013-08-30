@@ -1,13 +1,13 @@
 /* wedding 列表 */
-/* line 4, ../sass/wedding_list.scss */
+/* line 5, ../sass/wedding_list.scss */
 div.wedding_zone {
   margin-top: 50px;
 }
-/* line 7, ../sass/wedding_list.scss */
+/* line 8, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list {
   width: 100%;
 }
-/* line 10, ../sass/wedding_list.scss */
+/* line 11, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li {
   list-style: none;
   display: block;
@@ -17,20 +17,22 @@ div.wedding_zone .wedding_list li {
   border: 0 solid #dac9bd;
   border-width: 1px 0 0 1px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-/* line 20, ../sass/wedding_list.scss */
+/* line 23, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li:nth-child(4n) {
   border-width: 1px 1px 0 1px;
 }
-/* line 24, ../sass/wedding_list.scss */
+/* line 27, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li:nth-child(9), div.wedding_zone .wedding_list li:nth-child(10), div.wedding_zone .wedding_list li:nth-child(11) {
   border-width: 1px 0 1px 1px;
 }
-/* line 28, ../sass/wedding_list.scss */
+/* line 31, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li:nth-child(12) {
   border-width: 1px 1px 1px 1px;
 }
-/* line 32, ../sass/wedding_list.scss */
+/* line 35, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.next_page {
   background-color: #f6f2ed;
   cursor: pointer;
@@ -41,7 +43,7 @@ div.wedding_zone .wedding_list li.next_page {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 37, ../sass/wedding_list.scss */
+/* line 40, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.next_page:hover {
   background: #f1ede3;
   text-indent: -119988px;
@@ -51,13 +53,13 @@ div.wedding_zone .wedding_list li.next_page:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 42, ../sass/wedding_list.scss */
+/* line 45, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.next_page a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 49, ../sass/wedding_list.scss */
+/* line 52, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.last_page {
   background-color: #f6f2ed;
   cursor: pointer;
@@ -68,7 +70,7 @@ div.wedding_zone .wedding_list li.last_page {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 54, ../sass/wedding_list.scss */
+/* line 57, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.last_page:hover {
   background: #f1ede3;
   text-indent: -119988px;
@@ -78,45 +80,49 @@ div.wedding_zone .wedding_list li.last_page:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 59, ../sass/wedding_list.scss */
+/* line 62, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li.last_page a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 66, ../sass/wedding_list.scss */
+/* line 69, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item {
   position: relative;
   height: 246px;
 }
-/* line 70, ../sass/wedding_list.scss */
+/* line 73, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item img {
   margin-top: 10px;
 }
-/* line 74, ../sass/wedding_list.scss */
+/* line 77, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item div.product_info {
-  display: none;
+  display: block;
   text-align: left;
   padding: 5px;
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
   right: 0;
   background-color: #9e968a;
   color: #fff;
   width: 125px;
   height: 70px;
   font-size: .8em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-/* line 87, ../sass/wedding_list.scss */
+/* line 91, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item div.product_info p {
   margin: 0;
 }
-/* line 90, ../sass/wedding_list.scss */
+/* line 94, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item div.product_info p.more {
   float: right;
   margin-top: 10px;
 }
-/* line 97, ../sass/wedding_list.scss */
+/* line 101, ../sass/wedding_list.scss */
 div.wedding_zone .wedding_list li div.product_item:hover > div.product_info {
-  display: block;
+  bottom: 0;
 }

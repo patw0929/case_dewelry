@@ -1,4 +1,5 @@
 @import "compass/utilities/text/replacement";
+@import "compass/css3/transition";
 
 /* jewelry列表 */
 div.jewelry_zone {
@@ -16,6 +17,8 @@ div.jewelry_zone {
             border: 0 solid rgb(218, 201, 189);
             border-width: 1px 0 0 1px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
 
             &:nth-child(4n) {
                 border-width: 1px 1px 0 1px;
@@ -72,17 +75,18 @@ div.jewelry_zone {
                 }
 
                 div.product_info {
-                    display: none;
+                    display: block;
                     text-align: left;
                     padding: 5px;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -80px;
                     right: 0;
                     background-color: rgb(158, 150, 138);
                     color: #fff;
                     width: 125px;
                     height: 70px;
                     font-size: .8em;
+                    @include transition(all .5s ease);
 
                     p {
                         margin: 0;
@@ -95,7 +99,7 @@ div.jewelry_zone {
                 }
 
                 &:hover > div.product_info {
-                    display: block;
+                    bottom: 0;
                 }
             }
         }
