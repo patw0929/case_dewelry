@@ -95,3 +95,34 @@ $(function () {
 function change_pic(theElement, pic_url){
 	theElement.src = pic_url;
 }
+
+//jewelry列表頁的下一頁
+function next_page_mouseover(theElement){
+	$(theElement).css("background-color", "rgb(241, 237, 227)");
+	$("#next_page").attr("src", "./images/jewelry/next_page_hover.jpg");
+}
+function next_page_mouseout(theElement){
+	$(theElement).css("background-color", "rgb(246, 242, 237)");
+	$("#next_page").attr("src", "./images/jewelry/next_page.jpg");
+}
+//jewelry列表頁的上一頁
+function last_page_mouseover(theElement){
+	$(theElement).css("background-color", "rgb(241, 237, 227)");
+	$("#last_page").attr("src", "./images/jewelry/last_page_hover.jpg");
+}
+function last_page_mouseout(theElement){
+	$(theElement).css("background-color", "rgb(246, 242, 237)");
+	$("#last_page").attr("src", "./images/jewelry/last_page.jpg");
+}
+
+//jewelry列表頁各項item滑過後，顯示div.product_info
+function info_show(theElement, in_or_out){
+	if(in_or_out == 'in'){
+		$(theElement).children("div[class=product_item]").children("div[class=product_info]").css("display", "block");
+	}
+	
+	if(in_or_out == 'out'){
+		$(theElement).children("div[class=product_item]").children("div[class=product_info]").css("display", "none");
+	}
+	
+}
