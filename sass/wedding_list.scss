@@ -1,0 +1,63 @@
+/*jewelry列表*/
+div.wedding_zone{
+	margin-top:50px;
+	
+	table.wedding_list{
+		
+		
+		tr{
+			td{
+				width:263px;
+				height:246px;
+				border:1px solid rgb(218, 201, 189);
+				text-align: center;
+				
+				
+				&.next_page{
+					background-color: rgb(246, 242, 237);
+					cursor:pointer;
+				}
+				&.last_page{
+					background-color: rgb(246, 242, 237);
+					cursor:pointer;
+				}
+				
+				
+				
+				
+				div.product_item{
+					position:relative;
+					height:246px;
+					margin-top:10px;
+					div.product_info{
+						display: none;
+						text-align: left;
+						padding:5px;
+						position: absolute;
+						bottom:0;
+						right:0;
+						background-color: rgb(158, 150, 138);
+						color:white;
+						width:125px;
+						height:70px;
+						font-size: .8em;
+						p{
+							margin:0;
+							&.more{
+								float:right;
+								margin-top:10px;
+							}
+						}
+					}
+					
+				}
+				
+				
+				
+				
+				
+			}
+		}
+	}
+
+}
