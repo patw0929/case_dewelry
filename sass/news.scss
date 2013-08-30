@@ -1,0 +1,82 @@
+@import "compass/utilities/text/replacement";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+$border-color: #e1dcd3;
+
+.content {
+
+    padding: 50px 0;
+    *padding: 50px 0 0 0;
+
+    .item {
+        float: left;
+        margin-bottom: 15px;
+        width: 482px;
+        height: 185px;
+        border: 1px solid $border-color;
+        overflow: hidden;
+
+        .thumb {
+            float: left;
+            width: 230px;
+            height: 185px;
+            border-right: 1px solid $border-color;
+        }
+
+        article {
+            float: left;
+            width: 250px;
+        }
+
+        time {
+            display: inline-block;
+            margin: 10px;
+            color: #b5abab;
+            font-size: .95em;
+        }
+
+        p {
+            margin: 0 10px 10px 10px;
+            color: #8e8161;
+            font-size: .95em;
+            min-height: 110px;
+        }
+
+        .more {
+            display: block;
+            float: right;
+            margin-right: 10px;
+
+            & a {
+                display: block;
+                width: 56px;
+                height: 16px;
+                @include replace-text("news/more.png");
+            }
+        }
+    }
+
+    .item:nth-child(even) {
+        float: right;
+    }
+
+}
+
+.pager {
+    font-size: .85em;
+    
+    a {
+        border: 1px solid #c9ba9e !important;
+        background-color: #f4f4f4 !important;
+        color: #a38b63 !important;
+        margin: 3px;
+        padding: 3px 10px !important;
+        @include border-radius(3px !important);
+        @include box-shadow(#898989 1px 1px 3px, #fff 1px 1px 2px 1px inset);
+    }
+
+    .on a {
+        background-color: #b3a387 !important;
+        color: #fff !important;
+    }
+}

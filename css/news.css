@@ -1,0 +1,88 @@
+/* line 6, ../sass/news.scss */
+.content {
+  padding: 50px 0;
+  *padding: 50px 0 0 0;
+}
+/* line 11, ../sass/news.scss */
+.content .item {
+  float: left;
+  margin-bottom: 15px;
+  width: 482px;
+  height: 185px;
+  border: 1px solid #e1dcd3;
+  overflow: hidden;
+}
+/* line 19, ../sass/news.scss */
+.content .item .thumb {
+  float: left;
+  width: 230px;
+  height: 185px;
+  border-right: 1px solid #e1dcd3;
+}
+/* line 26, ../sass/news.scss */
+.content .item article {
+  float: left;
+  width: 250px;
+}
+/* line 31, ../sass/news.scss */
+.content .item time {
+  display: inline-block;
+  margin: 10px;
+  color: #b5abab;
+  font-size: .95em;
+}
+/* line 38, ../sass/news.scss */
+.content .item p {
+  margin: 0 10px 10px 10px;
+  color: #8e8161;
+  font-size: .95em;
+  min-height: 110px;
+}
+/* line 45, ../sass/news.scss */
+.content .item .more {
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+/* line 50, ../sass/news.scss */
+.content .item .more a {
+  display: block;
+  width: 56px;
+  height: 16px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/news/more.png?1377847696');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 59, ../sass/news.scss */
+.content .item:nth-child(even) {
+  float: right;
+}
+
+/* line 65, ../sass/news.scss */
+.pager {
+  font-size: .85em;
+}
+/* line 68, ../sass/news.scss */
+.pager a {
+  border: 1px solid #c9ba9e !important;
+  background-color: #f4f4f4 !important;
+  color: #a38b63 !important;
+  margin: 3px;
+  padding: 3px 10px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  border-radius: 3px !important;
+  -webkit-box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
+  -moz-box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
+  box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
+}
+/* line 78, ../sass/news.scss */
+.pager .on a {
+  background-color: #b3a387 !important;
+  color: #fff !important;
+}
