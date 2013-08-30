@@ -1,0 +1,130 @@
+@import "compass/utilities/text/replacement";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+$border-color: #e1dcd3;
+
+.images {
+
+    padding: 50px 0;
+    *padding: 50px 0 0 0;
+
+    .viewer {
+        background-color: #ece9e4;
+        min-height: 515px;
+    }
+
+    .view img {
+        border: 1px solid #a0927b;
+    }
+
+    .thumbs {
+        margin: 10px auto;
+        list-style: none;
+        @include clearfix;
+
+        li {
+            float: left;
+            display: inline-block;
+            *display: inline;
+            margin-left: 8px;
+        }
+
+        .focus {
+            margin: -10px 0 0 0;
+            border: 5px solid #927c55;
+            position: relative;
+            *width: 105px;
+            *height: 0;
+        }
+    }
+
+}
+
+.content {
+
+    padding: 50px 0;
+    *padding: 50px 0 0 0;
+    color: #98836c;
+    font-size: .95em;
+    font-family: Arial;
+    letter-spacing: .2em;
+
+    time {
+        border-right: 1px solid #98836c;
+        padding-right: 5px;
+    }
+
+    h1 {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        font-weight: normal;
+        font-size: .95em;
+    }
+
+    hr {
+        border: 0;
+        height: 8px;
+        background: url(../images/news/hr.png) no-repeat;
+        margin: 0 0 10px 0;
+        *display: list-item;
+        *list-style: url(../images/news/hr.png) inside;
+        *filter: alpha(opacity=0);
+        *width: 0;
+        *margin: 0;
+    }
+
+    article p {
+        margin-top: 15px;
+    }
+
+    .controls {
+        list-style: none;
+        margin-top: 30px;
+
+        li {
+            float: left;
+            display: block;
+            font-size: .85em;
+            overflow: hidden;
+
+            &.back {
+                width: 190px;
+                height: 48px;
+                background: url("../images/news/btn_back.png") no-repeat;
+                margin-right: 10px;
+
+                a {
+                    color: #b3a18e;
+                    display: inline-block;
+                    margin: 5px 5px 5px 70px;
+                }
+            }
+
+            &.next {
+                width: 190px;
+                height: 48px;
+                background: url("../images/news/btn_next.png") no-repeat;
+                margin-left: 10px;
+
+                a {
+                    color: #b3a18e;
+                    display: inline-block;
+                    margin: 5px 70px 5px 5px;
+                }
+            }
+
+            &.list {
+                width: 63px;
+                height: 48px;
+
+                a {
+                    display: block;
+                    width: 63px;
+                    height: 48px;
+                    @include replace-text("news/btn_list.png");
+                }
+            }
+        }
+    }
+}
