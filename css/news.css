@@ -37,14 +37,16 @@
   color: #8e8161;
   font-size: .95em;
   min-height: 110px;
+  max-height: 110px;
+  overflow: hidden;
 }
-/* line 45, ../sass/news.scss */
+/* line 47, ../sass/news.scss */
 .content .item .more {
   display: block;
   float: right;
   margin-right: 10px;
 }
-/* line 50, ../sass/news.scss */
+/* line 52, ../sass/news.scss */
 .content .item .more a {
   display: block;
   width: 56px;
@@ -56,22 +58,22 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 58, ../sass/news.scss */
+/* line 60, ../sass/news.scss */
 .content .item .ribbon {
   position: absolute;
   left: -24px;
   top: 10px;
 }
-/* line 65, ../sass/news.scss */
+/* line 67, ../sass/news.scss */
 .content .item:nth-child(even) {
   float: right;
 }
 
-/* line 71, ../sass/news.scss */
+/* line 73, ../sass/news.scss */
 .pager {
   font-size: .85em;
 }
-/* line 74, ../sass/news.scss */
+/* line 76, ../sass/news.scss */
 .pager li a {
   border: 1px solid #c9ba9e;
   background-color: #f4f4f4;
@@ -87,7 +89,7 @@
   -moz-box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
   box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
 }
-/* line 84, ../sass/news.scss */
+/* line 86, ../sass/news.scss */
 .pager li.on a {
   background-color: #b3a387;
   color: #fff;
