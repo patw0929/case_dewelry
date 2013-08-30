@@ -40,6 +40,8 @@ $border-color: #e1dcd3;
             color: #8e8161;
             font-size: .95em;
             min-height: 110px;
+            max-height: 110px;
+            overflow: hidden;
         }
 
         .more {
