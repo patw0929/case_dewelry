@@ -10,11 +10,11 @@ $border-color: #e1dcd3;
 
     .item {
         float: left;
+        position: relative;
         margin-bottom: 15px;
         width: 482px;
         height: 185px;
         border: 1px solid $border-color;
-        overflow: hidden;
 
         .thumb {
             float: left;
@@ -53,6 +53,12 @@ $border-color: #e1dcd3;
                 height: 16px;
                 @include replace-text("news/more.png");
             }
+        }
+
+        .ribbon {
+            position: absolute;
+            left: -24px;
+            top: 10px;
         }
     }
 
