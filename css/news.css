@@ -6,11 +6,11 @@
 /* line 11, ../sass/news.scss */
 .content .item {
   float: left;
+  position: relative;
   margin-bottom: 15px;
   width: 482px;
   height: 185px;
   border: 1px solid #e1dcd3;
-  overflow: hidden;
 }
 /* line 19, ../sass/news.scss */
 .content .item .thumb {
@@ -56,33 +56,39 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 59, ../sass/news.scss */
+/* line 58, ../sass/news.scss */
+.content .item .ribbon {
+  position: absolute;
+  left: -24px;
+  top: 10px;
+}
+/* line 65, ../sass/news.scss */
 .content .item:nth-child(even) {
   float: right;
 }
 
-/* line 65, ../sass/news.scss */
+/* line 71, ../sass/news.scss */
 .pager {
   font-size: .85em;
 }
-/* line 68, ../sass/news.scss */
-.pager a {
-  border: 1px solid #c9ba9e !important;
-  background-color: #f4f4f4 !important;
-  color: #a38b63 !important;
+/* line 74, ../sass/news.scss */
+.pager li a {
+  border: 1px solid #c9ba9e;
+  background-color: #f4f4f4;
+  color: #a38b63;
   margin: 3px;
-  padding: 3px 10px !important;
-  -webkit-border-radius: 3px !important;
-  -moz-border-radius: 3px !important;
-  -ms-border-radius: 3px !important;
-  -o-border-radius: 3px !important;
-  border-radius: 3px !important;
+  padding: 3px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
   -moz-box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
   box-shadow: #898989 1px 1px 3px, white 1px 1px 2px 1px inset;
 }
-/* line 78, ../sass/news.scss */
-.pager .on a {
-  background-color: #b3a387 !important;
-  color: #fff !important;
+/* line 84, ../sass/news.scss */
+.pager li.on a {
+  background-color: #b3a387;
+  color: #fff;
 }

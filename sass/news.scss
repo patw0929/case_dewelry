@@ -10,11 +10,11 @@ $border-color: #e1dcd3;
 
     .item {
         float: left;
+        position: relative;
         margin-bottom: 15px;
         width: 482px;
         height: 185px;
         border: 1px solid $border-color;
-        overflow: hidden;
 
         .thumb {
             float: left;
@@ -54,6 +54,12 @@ $border-color: #e1dcd3;
                 @include replace-text("news/more.png");
             }
         }
+
+        .ribbon {
+            position: absolute;
+            left: -24px;
+            top: 10px;
+        }
     }
 
     .item:nth-child(even) {
@@ -65,18 +71,18 @@ $border-color: #e1dcd3;
 .pager {
     font-size: .85em;
     
-    a {
-        border: 1px solid #c9ba9e !important;
-        background-color: #f4f4f4 !important;
-        color: #a38b63 !important;
+    li a {
+        border: 1px solid #c9ba9e;
+        background-color: #f4f4f4;
+        color: #a38b63;
         margin: 3px;
-        padding: 3px 10px !important;
-        @include border-radius(3px !important);
+        padding: 3px 10px;
+        @include border-radius(3px);
         @include box-shadow(#898989 1px 1px 3px, #fff 1px 1px 2px 1px inset);
     }
 
-    .on a {
-        background-color: #b3a387 !important;
-        color: #fff !important;
+    li.on a {
+        background-color: #b3a387;
+        color: #fff;
     }
 }
