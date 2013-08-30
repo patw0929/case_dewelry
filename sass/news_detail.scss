@@ -11,6 +11,7 @@ $border-color: #e1dcd3;
 
     .viewer {
         background-color: #ece9e4;
+        width: 502px;
         min-height: 515px;
     }
 
@@ -97,7 +98,8 @@ $border-color: #e1dcd3;
                 a {
                     color: #b3a18e;
                     display: inline-block;
-                    margin: 5px 5px 5px 70px;
+                    padding-left: 70px;
+                    margin-top: 5px;
                 }
             }
 
@@ -110,7 +112,8 @@ $border-color: #e1dcd3;
                 a {
                     color: #b3a18e;
                     display: inline-block;
-                    margin: 5px 70px 5px 5px;
+                    padding-left: 5px;
+                    margin-top: 5px;
                 }
             }
 

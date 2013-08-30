@@ -2,135 +2,124 @@
 
 <% content_for :header_content do %>
   <link href="./css/wedding_list.css" rel="stylesheet">
+  <script src="./js/selectivizr-min.js"></script>
 <% end %>
 <% content_for :breadcrumb_content do %>
   <a href="index.html">Home</a> &gt; <a href="wedding_list.html">Wedding</a> &gt; <a href="#">Natural Pearl</a>
 <% end %>
 
 <div class="wedding_zone">
-	<table class="wedding_list">
-		<tr><!-- 第一列 -->
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/1_1.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/1_2.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/1_3.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/1_4.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-		</tr>
-		
-		<tr><!-- 第二列 -->
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/2_1.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/2_2.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/2_3.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/2_4.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-		</tr>
-		
-		<tr><!-- 第三列 -->
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/3_1.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/3_2.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			<td onmouseover="info_show(this, 'in')" onmouseout="info_show(this, 'out')">
-				<div class="product_item">
-					<img src="./images/wedding/3_3.png">
-					<div class="product_info">
-						<p>玫瑰心情</p>
-						<p>Style # 9999</p>
-						<p class="more">MORE</p>
-					</div>
-				</div>
-			</td>
-			
-			<td class="next_page" onmouseover="next_page_mouseover(this)" onmouseout="next_page_mouseout(this)"><img src="./images/wedding/next_page.jpg" id="next_page"></td>
-		</tr>
-	</table>
+    <ul class="wedding_list">
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/1_1.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/1_2.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/1_3.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/1_4.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/2_1.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/2_2.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/2_3.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/2_4.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/3_1.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/3_2.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product_item">
+                <img src="./images/wedding/3_3.png">
+                <div class="product_info">
+                    <p>玫瑰心情</p>
+                    <p>Style # 9999</p>
+                    <p class="more">MORE</p>
+                </div>
+            </div>
+        </li>
+        <li class="next_page"><a href="wedding_list2.html">Next</a></li>
+    </ul>
 </div>
