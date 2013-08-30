@@ -1,151 +1,156 @@
 @import "variables_custom";
-div.header_wrap{
-	position:relative;
-	border-bottom: 1px dashed rgb(185, 184, 166);
-	nav.sub_nav{
-		display:none;
-		width:100%;
-		height:105px;
-		background: url("../images/subnav/bg_shadow.png") no-repeat;
-		background-position: center;
-		position: absolute;
-		z-index:99999;
-		div.bg_color{
-			background-color: rgb(250, 248, 243);
-			width:100%;
-			height:98px;
-		}
-		
-		/*wedding次選單*/
-		ul.sub_nav_wedding_ul, ul.sub_nav_jewelry_ul{
-			display:none;
-			margin-left:0;
-			text-align: center;
-			li{
-				width:144px;
-				display: inline-block;
-				border-right:1px dotted rgb(210, 199, 165);
-				height:98px;
-				cursor: pointer;
-				line-height:38px;
-				font-size:.8em;
-				margin-left:-4px;
-				&.first{
-					border-left:1px dotted rgb(210, 199, 165);
-				}
-				&:hover{
-					background: url("../images/subnav/bg.png") no-repeat;
-				}
-				a{
-					color:rgb(198, 188, 146);
-					text-decoration: none;
-					img{
-						display:block;
-						margin:10px auto 0 auto;
-					}
-				}
-			}
-			
-		}
-		
-		
-		
-	}
-	
-	header.header{
-		width:$layout_width;
-		margin:10px auto 0 auto;
-		position:relative;
-		div.logo{
-			width:140px;
-			margin:0 auto;
-		}
-		
-		/*主導覽列*/
-		nav.main_nav{
-			
-			margin-top:10px;
-			
-			ul.main_nav_ul{
-				
-				margin-left:0;
-				margin-bottom:0;
-				padding-left:30px;
-				li{
-					position:relative;
-					display:inline-block;
-					*display: inline;
-					width:135px;
-					text-align: center;
-					height:30px;
-					line-height: 30px;
-					font-size:.8em;
-					
-					img.d_line{
-						float:right;
-						position:relative;
-						bottom:-8px;
-						
-					}
-					
-					
-					a{
-						color:rgb(198, 188, 146);
-						cursor:pointer;
-						text-decoration: none;
-						
-						img.item_icon{
-							position: relative;
-							display: inline-block;
-							margin-right:5px;
-							top:-2px;
-						}
-						
-						&:hover{
-							color:rgb(147, 31, 68);
-						}
-					}
-					
-					
-					
-					img.hinter{
-						position:absolute;
-						left:40px;
-						top:25px;
-						display:none;
-						z-index: 999999;
-					}
-					
-					&.on{
-						a{
-							color:rgb(235, 183, 185);
-							
-						}
-						img.hinter{
-							display:block;
-						}
-						
-					}
-					
-				}
-			}
-			
-		}
-		
-		
-		/*麵包屑*/
-		div.page_breadcrumb{
-			position:absolute;
-			right:0;
-			a{
-				color:rgb(198, 188, 146);
-			}
-			top:100px;
-		}
-		
-	}
-	
-	
-	
+
+div.header_wrap {
+    position: relative;
+    border-bottom: 1px dashed rgb(185, 184, 166);
+
+    nav.sub_nav {
+        display: none;
+        width: 100%;
+        height: 105px;
+        background: url("../images/subnav/bg_shadow.png") no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: 99999;
+
+        div.bg_color {
+            background-color: rgb(250, 248, 243);
+            width: 100%;
+            height: 98px;
+        }
+        
+        /*wedding次選單*/
+        ul.sub_nav_wedding_ul, ul.sub_nav_jewelry_ul {
+            display: none;
+            margin-left: 0;
+            text-align: center;
+
+            li {
+                width: 144px;
+                display: inline-block;
+                border-right: 1px dotted rgb(210, 199, 165);
+                height: 98px;
+                cursor: pointer;
+                line-height: 38px;
+                font-size: .8em;
+                margin-left: -4px;
+
+                &.first {
+                    border-left: 1px dotted rgb(210, 199, 165);
+                }
+
+                &:hover {
+                    background: url("../images/subnav/bg.png") no-repeat;
+                }
+
+                a {
+                    color: rgb(198, 188, 146);
+                    text-decoration: none;
+
+                    img {
+                        display: block;
+                        margin: 10px auto 0 auto;
+                    }
+                }
+            }
+            
+        }
+        
+        
+        
+    }
+    
+    header.header {
+        width: $layout_width;
+        margin: 10px auto 0 auto;
+        position: relative;
+
+        div.logo {
+            width:140px;
+            margin:0 auto;
+        }
+        
+        /*主導覽列*/
+        nav.main_nav {
+            
+            margin-top: 10px;
+            
+            ul.main_nav_ul {
+                margin-left: 0;
+                margin-bottom: 0;
+                padding-left: 30px;
+
+                li {
+                    position: relative;
+                    display: inline-block;
+                    *display: inline;
+                    width: 135px;
+                    text-align: center;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: .8em;
+                    
+                    img.d_line {
+                        float: right;
+                        position: relative;
+                        bottom: -8px;
+                    }
+                    
+                    
+                    a {
+                        color: rgb(198, 188, 146);
+                        cursor: pointer;
+                        text-decoration: none;
+                        
+                        img.item_icon {
+                            position: relative;
+                            display: inline-block;
+                            margin-right: 5px;
+                            top: -2px;
+                        }
+                        
+                        &:hover {
+                            color: rgb(147, 31, 68);
+                        }
+                    }
+                    
+                    
+                    
+                    img.hinter {
+                        position: absolute;
+                        left: 40px;
+                        top: 25px;
+                        display: none;
+                        z-index: 999999;
+                    }
+                    
+                    &.on {
+                        a {
+                            color: rgb(235, 183, 185);
+                            
+                        }
+                        img.hinter {
+                            display: block;
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+        }
+
+        /* 麵包屑 */
+        div.page_breadcrumb {
+            position: absolute;
+            right: 0;
+            top: 100px;
+            z-index: 99;
+
+            a {
+                color: rgb(198, 188, 146);
+            }
+        }
+    }
 }
 
