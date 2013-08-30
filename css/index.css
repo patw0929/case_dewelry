@@ -22,7 +22,7 @@ div.all_vs #nav {
   overflow: hidden;
   z-index: 99999;
   bottom: 30px;
-  right: 50px;
+  right: 33px;
 }
 /* line 23, ../sass/index.scss */
 div.all_vs #nav li {
@@ -50,4 +50,86 @@ div.all_vs #nav li.activeSlide {
 div.all_vs #nav img {
   border: none;
   display: block;
+}
+
+/*連結按鈕*/
+/* line 59, ../sass/index.scss */
+ul.link_button {
+  position: relative;
+  width: 941px;
+  height: 94px;
+  margin: -35px auto 0 auto;
+  z-index: 999999;
+  background: url("../images/link_bg.png") no-repeat;
+  line-height: 88px;
+}
+/* line 67, ../sass/index.scss */
+ul.link_button li {
+  list-style: none;
+  display: inline-block;
+  width: 234px;
+  border-right: 1px solid #b8b8b8;
+}
+/* line 73, ../sass/index.scss */
+ul.link_button li button {
+  /*link區第一個按鈕*/
+  /*link區第二個按鈕*/
+  /*link區第三個按鈕*/
+  /*link區第四個按鈕*/
+}
+/* line 76, ../sass/index.scss */
+ul.link_button li button.button_1 {
+  position: relative;
+  width: 234px;
+  height: 79px;
+  border: none;
+  background: none;
+  background-image: url("../images/link_button_1.jpg");
+  background-repeat: no-repeat;
+}
+/* line 84, ../sass/index.scss */
+ul.link_button li button.button_1:hover {
+  background-image: url("../images/link_button_1_hover.jpg");
+}
+/* line 89, ../sass/index.scss */
+ul.link_button li button.button_2 {
+  position: relative;
+  width: 234px;
+  height: 79px;
+  border: none;
+  background: none;
+  background-image: url("../images/link_button_2.jpg");
+  background-repeat: no-repeat;
+}
+/* line 97, ../sass/index.scss */
+ul.link_button li button.button_2:hover {
+  background-image: url("../images/link_button_2_hover.jpg");
+}
+/* line 103, ../sass/index.scss */
+ul.link_button li button.button_3 {
+  position: relative;
+  width: 234px;
+  height: 79px;
+  border: none;
+  background: none;
+  background-image: url("../images/link_button_3.jpg");
+  background-repeat: no-repeat;
+}
+/* line 111, ../sass/index.scss */
+ul.link_button li button.button_3:hover {
+  background-image: url("../images/link_button_3_hover.jpg");
+}
+/* line 117, ../sass/index.scss */
+ul.link_button li button.button_4 {
+  position: relative;
+  width: 234px;
+  height: 79px;
+  border: none;
+  background: none;
+  background-image: url("../images/link_button_4.jpg");
+  background-repeat: no-repeat;
+}
+/* line 125, ../sass/index.scss */
+ul.link_button li button.button_4:hover {
+  background-image: url("../images/link_button_4_hover.jpg");
 }
