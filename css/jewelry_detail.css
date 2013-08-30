@@ -1,0 +1,228 @@
+/*產品圖*/
+/* line 2, ../sass/jewelry_detail.scss */
+div.product_pic {
+  margin-top: 50px;
+  /*大張產品圖*/
+  /*小張產品圖*/
+}
+/* line 6, ../sass/jewelry_detail.scss */
+div.product_pic .slideshow {
+  width: 400px;
+  height: 416px;
+  margin: 0 auto;
+}
+/* line 10, ../sass/jewelry_detail.scss */
+div.product_pic .slideshow img {
+  padding: 0px;
+}
+/* line 17, ../sass/jewelry_detail.scss */
+div.product_pic #nav {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+/* line 20, ../sass/jewelry_detail.scss */
+div.product_pic #nav li {
+  width: 66px;
+  margin: 8px;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #d4cdc8;
+}
+/* line 29, ../sass/jewelry_detail.scss */
+div.product_pic #nav a {
+  width: 66px;
+  display: block;
+}
+/* line 34, ../sass/jewelry_detail.scss */
+div.product_pic #nav a:focus {
+  outline: none;
+}
+/* line 39, ../sass/jewelry_detail.scss */
+div.product_pic #nav li.activeSlide {
+  background: url("../images/jewelry_detail/small_icon_bg.png");
+}
+/* line 45, ../sass/jewelry_detail.scss */
+div.product_pic #nav img {
+  border: none;
+  display: block;
+}
+
+/*產品資訊*/
+/* line 54, ../sass/jewelry_detail.scss */
+div.product_info {
+  margin-top: 50px;
+  color: #968771;
+  /*產品描述*/
+  /*產品規格*/
+  /*備註*/
+  /*更多商品*/
+  /*fb及back*/
+}
+/* line 58, ../sass/jewelry_detail.scss */
+div.product_info h1.title {
+  text-align: center;
+  font-size: 1.2em;
+}
+/* line 63, ../sass/jewelry_detail.scss */
+div.product_info img.title_hr {
+  width: 396px;
+  display: block;
+  margin: -20px auto 0 auto;
+}
+/* line 70, ../sass/jewelry_detail.scss */
+div.product_info div.product_desc {
+  margin-top: 20px;
+}
+/* line 73, ../sass/jewelry_detail.scss */
+div.product_info div.product_desc div.product_desc_title_zone {
+  width: 77px;
+}
+/* line 78, ../sass/jewelry_detail.scss */
+div.product_info div.product_desc div.product_desc_text_zone {
+  float: right;
+  width: 410px;
+  margin-top: -74px;
+  font-size: 12px;
+  line-height: 24px;
+  border-bottom: 1px dotted #bab4aa;
+}
+/* line 91, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec {
+  margin-top: 20px;
+}
+/* line 94, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec div.product_spec_title_zone {
+  width: 77px;
+}
+/* line 99, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec div.product_spec_text_zone {
+  float: right;
+  width: 410px;
+  margin-top: -74px;
+  font-size: 12px;
+  line-height: 24px;
+  border-bottom: 1px dotted #bab4aa;
+}
+/* line 110, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_left span.sub_title {
+  font-weight: bold;
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+/* line 118, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_right {
+  float: right;
+  margin-top: -96px;
+  width: 180px;
+}
+/* line 124, ../sass/jewelry_detail.scss */
+div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_right span.sub_title {
+  display: inline-block;
+  font-weight: bold;
+  width: 90px;
+  text-align: right;
+}
+/* line 138, ../sass/jewelry_detail.scss */
+div.product_info div.product_note {
+  margin-top: 40px;
+}
+/* line 141, ../sass/jewelry_detail.scss */
+div.product_info div.product_note div.product_note_title_zone {
+  width: 77px;
+}
+/* line 145, ../sass/jewelry_detail.scss */
+div.product_info div.product_note div.product_note_text_zone {
+  float: right;
+  width: 410px;
+  margin-top: -24px;
+  font-size: 12px;
+  line-height: 24px;
+  border-bottom: 1px dotted #bab4aa;
+}
+/* line 157, ../sass/jewelry_detail.scss */
+div.product_info div.product_more {
+  margin-top: 40px;
+  height: 100px;
+}
+/* line 162, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_title_zone {
+  width: 77px;
+  text-align: center;
+  line-height: 100px;
+}
+/* line 169, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone {
+  float: right;
+  width: 410px;
+  margin-top: -100px;
+  font-size: 12px;
+  line-height: 24px;
+  height: 100px;
+  /* Tiny Carousel */
+}
+/* line 180, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 {
+  height: 100%;
+  overflow: hidden;
+}
+/* line 185, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .viewport {
+  float: left;
+  width: 360px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 194, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .buttons {
+  background: url("../images/jewelry_detail/arrow_combine.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  margin: 12px 0px 0 0;
+  background-position: 0 -28px;
+  text-indent: -999px;
+  float: left;
+  width: 18px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 209, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .next {
+  background-position: 0 0;
+  margin: 12px 0 0 0px;
+}
+/* line 214, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .disable {
+  visibility: hidden;
+}
+/* line 218, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .overview {
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  left: 0;
+  top: 0;
+}
+/* line 228, ../sass/jewelry_detail.scss */
+div.product_info div.product_more div.product_more_text_zone #slider1 .overview li {
+  float: left;
+  margin-right: 10px;
+  height: 80px;
+  width: 80px;
+}
+/* line 243, ../sass/jewelry_detail.scss */
+div.product_info div.fb_back {
+  height: 70px;
+  margin-top: 20px;
+}
+/* line 246, ../sass/jewelry_detail.scss */
+div.product_info div.fb_back div.back_link {
+  float: right;
+}
+/* line 249, ../sass/jewelry_detail.scss */
+div.product_info div.fb_back div.fb-like {
+  margin-top: -60px;
+}

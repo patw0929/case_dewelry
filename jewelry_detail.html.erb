@@ -1,0 +1,141 @@
+<% @on_jewelry_list = capture do %>on<% end %>
+
+<% content_for :header_content do %>
+  <link href="./css/jewelry_detail.css" rel="stylesheet">
+  <script src="./js/jquery.cycle.all.js"></script>
+  
+  <script src="./js/jewelry_product_fade.js"></script>
+  <script src="./js/jquery.tinycarousel.min.js"></script>
+<% end %>
+
+<% content_for :breadcrumb_content do %>
+  <a href="index.html">Home</a> &gt; <a href="jewelry_list.html">Wedding</a> &gt; <a href="#">Women's ring</a> &gt; <a href="#">Heart of Rose</a>
+<% end %>
+
+
+
+<div class="span6 product_pic">
+	<div class="slideshow">
+		<img src="./images/jewelry_detail/product_big/1.jpg">
+		<img src="./images/jewelry_detail/product_big/2.png">
+		<img src="./images/jewelry_detail/product_big/3.png">
+	</div><!-- end class slideshow -->
+		
+		
+	<ul id="nav">
+		<li><a href="#"><img src="./images/jewelry_detail/product_small/1_small.png"></a></li>
+		<li><a href="#"><img src="./images/jewelry_detail/product_small/2_small.png"></a></li>
+		<li><a href="#"><img src="./images/jewelry_detail/product_small/3_small.png"></a></li>
+	</ul><!-- end id  nav-->
+
+</div>
+
+<div class="span6 product_info">
+
+	<h1 class="title">玫瑰心情 Heart of the Rose</h1>
+	<img src="./images/jewelry_detail/hr_line.png" class="title_hr">
+	
+	<!-- 產品描述 -->
+	<div class="product_desc">
+		<div class="product_desc_title_zone">
+			<img src="./images/jewelry_detail/product_desc_title.png">
+		</div>
+		
+		<div class="product_desc_text_zone">
+			我們的珠寶設計師的浪漫設計理念，是將中間單一美鑽視為花朵中間的雌蕊， 一如女人的愛在心中盛開，而在外圍層層包覆的三片花瓣則是雄蕊，在愛情中意味著男人將女人一生一世捧在手心上，細心的呵護她一輩子！
+		</div>
+	</div><!-- end 產品描述 -->
+	
+	<!-- 產品規格 -->
+	<div class="product_spec">
+		<div class="product_spec_title_zone">
+			<img src="./images/jewelry_detail/product_spec_title.png">
+		</div>
+		
+		<div class="product_spec_text_zone">
+			<div class="product_spec_text_zone_left">
+				<div>
+					<span class="sub_title">Cut / 車工：</span><span>H&amp;A 八心八箭完全車工</span>
+				</div>
+				<div>
+					<span class="sub_title">Color / 顏色：</span><span>F</span>
+				</div>
+				<div>
+					<span class="sub_title">Clarity / 淨度：</span><span>VV S2</span>
+				</div>
+				<div>
+					<span class="sub_title">Carat / 重量：</span><span>0.30克拉</span>
+				</div>
+			</div><!-- end class product_spec_text_zone_left -->
+			
+			<div class="product_spec_text_zone_right">
+				<div>
+					<span class="sub_title">商品編號：</span><span>XS 4619</span>
+				</div>
+				<div>
+					<span class="sub_title">貴金屬材質：</span><span>K金</span>
+				</div>
+				<div>
+					<span class="sub_title">寶石：</span><span>鑽石</span>
+				</div>
+			</div><!-- end class product_spec_text_zone_right -->
+			
+		</div>
+	</div><!-- end 產品規格 -->
+	
+	<!-- 備註 -->
+	<div class="product_note">
+		<div class="product_note_title_zone">
+			<img src="./images/jewelry_detail/note_title.png">
+		</div>
+		
+		<div class="product_note_text_zone">
+			商品價位以現場提供之等級為準，歡迎蒞臨現場詢問及試戴！
+		</div>
+	</div><!-- end 備註 -->
+	
+	<!-- 更多商品 -->
+	<div class="product_more">
+		<div class="product_more_title_zone">
+			<img src="./images/jewelry_detail/more_product.png">
+		</div>
+		
+		<div class="product_more_text_zone">
+			
+			<!-- more標多商品slideshow -->
+			<div id="slider1">
+				<a class="buttons prev" href="#">left</a>
+				
+				<div class="viewport">
+					<ul class="overview">
+						<li><img src="./images/jewelry_detail/more/a.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/b.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/c.png" alt=""></li>									
+						<li><img src="./images/jewelry_detail/more/d.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/a.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/b.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/c.png" alt=""></li>									
+						<li><img src="./images/jewelry_detail/more/d.png" alt=""></li>
+						<li><img src="./images/jewelry_detail/more/c.png" alt=""></li>									
+						<li><img src="./images/jewelry_detail/more/d.png" alt=""></li>
+					</ul>
+				</div>
+	      
+	      
+				<a class="buttons next" href="#">right</a>
+			</div><!-- end id slider1 -->
+			
+		</div>
+	</div><!-- end 更多商品 -->
+	
+	<!-- fb及back -->
+	<div class="fb_back">
+		<div class="back_link">
+			<a href="jewelry_list.html"><img src="./images/jewelry_detail/back_list.png" alt=""></a>
+		</div>
+		<!-- TODO: 更換 data-href 為本頁網址 -->
+		<div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-show-faces="true" data-send="true"></div>
+		
+		
+	</div>
+</div>
