@@ -5,7 +5,9 @@ $(function () {
 		var that = $(this);
 		e.preventDefault();
 
-		$('.view > img').attr('src', that.attr('href'));
+		$('.view > img').fadeOut(function () {
+			$(this).attr('src', that.attr('href'))
+		}).fadeIn();
 		$('.focus').remove();
 		that.parent().append('<div class="focus"></div>');
 
