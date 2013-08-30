@@ -1,255 +1,254 @@
-/*產品圖*/
-div.product_pic{
-	margin-top:50px;
-	
-	/*大張產品圖*/
-	.slideshow{
-		width: 400px;
-		height: 416px;
-		margin: 0 auto;
-		img{
-			padding: 0px;
-		}
-	}
-	
-	
-	/*小張產品圖*/
-	#nav{
-		margin-left:60px;
-		margin-top:30px;
-		li{
-			width: 66px;
-			
-			margin: 8px;
-			list-style: none;
-			display:inline-block;
-			border:1px solid rgb(212, 205, 200);
-		}
-		
-		a{
-			width: 66px;
-			display: block;
-			
-			
-			&:focus{
-				outline: none;
-			}
-		}
-		
-		li.activeSlide{
-			background: url("../images/jewelry_detail/small_icon_bg.png");
-			
-			
-		}
-		
-		img{
-			border: none;
-			display: block;
-		}
-	}
-	
+@import "compass/utilities/text/replacement";
+
+/* 產品圖 */
+div.product_pic {
+    margin-top: 50px;
+    
+    /*大張產品圖*/
+    .slideshow {
+        width: 400px;
+        height: 416px;
+        margin: 0 auto;
+        img {
+        	width: 400px;
+        	height: 416px;
+            padding: 0;
+        }
+    }
+    
+    
+    /* 小張產品圖 */
+    #nav {
+        margin-left: 60px;
+        margin-top: 30px;
+
+        li {
+            width: 66px;
+            margin: 8px;
+            list-style: none;
+            display: inline-block;
+            *float: left;
+            border: 1px solid rgb(212, 205, 200);
+        }
+        
+        a {
+            width: 66px;
+            display: block;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        li.activeSlide {
+            background: url("../images/jewelry_detail/small_icon_bg.png");
+        }
+        
+        img {
+            border: none;
+            display: block;
+        }
+    }
+    
 }
 
 /*產品資訊*/
-div.product_info{
-	
-	margin-top:50px;
-	color:rgb(150, 135, 113);
-	h1.title{
-		text-align: center;
-		font-size:1.2em;
-	}
-	
-	img.title_hr{
-		width:396px;
-		display:block;
-		margin: -20px auto 0 auto;
-	}
-	
-	/*產品描述*/
-	div.product_desc{
-		margin-top:20px;
-		
-		div.product_desc_title_zone{
-			width:77px;
-			
-		}
-		
-		div.product_desc_text_zone{
-			float:right;
-			width:410px;
-			margin-top:-74px;
-			font-size: 12px;
-			line-height: 24px;
-			border-bottom: 1px dotted rgb(186, 180, 170);
-		}
-		
-	}
-	
-	
-	/*產品規格*/
-	div.product_spec{
-		margin-top:20px;
-		
-		div.product_spec_title_zone{
-			width:77px;
-			
-		}
-		
-		div.product_spec_text_zone{
-			float:right;
-			width:410px;
-			margin-top:-74px;
-			font-size: 12px;
-			line-height: 24px;
-			border-bottom: 1px dotted rgb(186, 180, 170);
-			
-			div.product_spec_text_zone_left{
-				
-				span{
-					&.sub_title{
-						font-weight: bold;
-						display: inline-block;
-						width:90px;
-						text-align: right;
-					}
-				}
-			}
-			div.product_spec_text_zone_right{
-				float:right;
-				margin-top:-96px;
-				width:180px;
-				
-				span{
-					&.sub_title{
-						display: inline-block;
-						font-weight: bold;
-						width:90px;
-						text-align: right;
-					}
-				}
-			}
-			
-		}
-		
-	}
-	
-	/*備註*/
-	div.product_note{
-		margin-top:40px;
-		
-		div.product_note_title_zone{
-			width:77px;
-		}
-		
-		div.product_note_text_zone{
-			float:right;
-			width:410px;
-			margin-top:-24px;
-			font-size: 12px;
-			line-height: 24px;
-			border-bottom: 1px dotted rgb(186, 180, 170);
-		}
-		
-	}
-	
-	/*更多商品*/
-	div.product_more{
-		margin-top:40px;
-		
-		height:100px;
-		
-		div.product_more_title_zone{
-			width:77px;
-			
-			text-align: center;
-			line-height: 100px;
-		}
-		
-		div.product_more_text_zone{
-			float:right;
-			width:410px;
-			margin-top:-100px;
-			font-size: 12px;
-			line-height: 24px;
-			
-			height:100px;
-			
-			
-			/* Tiny Carousel */
-			#slider1{
-				height: 100%;
-				overflow:hidden;
-				
-				
-				.viewport{
-					
-					float: left;
-					width: 360px;
-					height: 800px;
-					overflow: hidden;
-					position: relative;
-				}
-				
-				.buttons{
-					
-					background:url("../images/jewelry_detail/arrow_combine.png") no-repeat scroll 0 0 transparent;
-					display: block;
-					margin: 12px 0px 0 0;
-					background-position: 0 -28px;
-					text-indent: -999px;
-					float: left;
-					width: 18px;
-					height: 56px;
-					overflow: hidden;
-					position: relative;
-					
-				}
-				
-				.next{
-					background-position: 0 0;
-					margin: 12px 0 0 0px;
-				}
-				
-				.disable{
-					visibility: hidden;
-				}
-				
-				.overview{
-					list-style: none;
-					position: absolute;
-					padding: 0;
-					margin: 0;
-					width: 360px;
-					left: 0;
-					top: 0;
-				}
-				
-				.overview li{
-					float: left;
-					margin-right: 10px;
-					height: 80px;
-					
-					width: 80px;
-				}
-			}
+div.product_info {
+    margin-top: 50px;
+    color: rgb(150, 135, 113);
+    h1.title {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    img.title_hr {
+        width: 396px;
+        display: block;
+        margin: -20px auto 0 auto;
+    }
+    
+    /*產品描述*/
+    div.product_desc {
+        margin-top: 20px;
+        
+        div.product_desc_title_zone {
+            width: 77px;
+        }
+        
+        div.product_desc_text_zone {
+            float: right;
+            width: 410px;
+            margin-top: -74px;
+            font-size: 12px;
+            line-height: 24px;
+            border-bottom: 1px dotted rgb(186, 180, 170);
+        }
+        
+    }
 
-			
-		}
-	}
-	
-	
-	/*fb及back*/
-	div.fb_back{
-		height:70px;
-		margin-top:20px;
-		div.back_link{
-			float:right;
-		}
-		div.fb-like{
-			margin-top:-60px;
-		}
-	}
-	
-	
+    /*產品規格*/
+    div.product_spec {
+        margin-top: 20px;
+        
+        div.product_spec_title_zone {
+            width: 77px;
+        }
+        
+        div.product_spec_text_zone {
+            float: right;
+            width: 410px;
+            margin-top: -74px;
+            font-size: 12px;
+            line-height: 24px;
+            border-bottom: 1px dotted rgb(186, 180, 170);
+            
+            div.product_spec_text_zone_left {
+                
+                span {
+                    &.sub_title {
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 90px;
+                        text-align: right;
+                    }
+                }
+            }
+            div.product_spec_text_zone_right {
+                float: right;
+                margin-top: -96px;
+                width: 180px;
+                
+                span {
+                    &.sub_title {
+                        display: inline-block;
+                        font-weight: bold;
+                        width: 90px;
+                        text-align: right;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    /*備註*/
+    div.product_note {
+        margin-top:40px;
+        
+        div.product_note_title_zone {
+            width: 77px;
+        }
+        
+        div.product_note_text_zone {
+            float: right;
+            width: 410px;
+            margin-top: -24px;
+            font-size: 12px;
+            line-height: 24px;
+            border-bottom: 1px dotted rgb(186, 180, 170);
+        }
+    }
+    
+    /*更多商品*/
+    div.product_more {
+        margin-top: 40px;
+        
+        height: 100px;
+        
+        div.product_more_title_zone {
+            width: 77px;
+            
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        div.product_more_text_zone {
+            float: right;
+            width: 410px;
+            margin-top: -100px;
+            font-size: 12px;
+            line-height: 24px;
+            height:100px;
+    
+            /* Tiny Carousel */
+            #slider1 {
+                height: 100%;
+                overflow: hidden;
+
+                .viewport {
+                    float: left;
+                    width: 360px;
+                    height: 800px;
+                    overflow: hidden;
+                    position: relative;
+                }
+                
+                .buttons {
+                    background: url("../images/jewelry_detail/arrow_combine.png") no-repeat scroll 0 0 transparent;
+                    display: block;
+                    margin: 12px 0px 0 0;
+                    background-position: 0 -28px;
+                    text-indent: -999px;
+                    float: left;
+                    width: 18px;
+                    height: 56px;
+                    overflow: hidden;
+                    position: relative;
+                    
+                }
+                
+                .next {
+                    background-position: 0 0;
+                    margin: 12px 0 0 0px;
+                }
+                
+                .disable {
+                    visibility: hidden;
+                }
+                
+                .overview {
+                    list-style: none;
+                    position: absolute;
+                    padding: 0;
+                    margin: 0;
+                    width: 360px;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .overview li {
+                    float: left;
+                    margin-right: 10px;
+                    height: 80px;
+                    
+                    width: 80px;
+                }
+            }
+        }
+    }
+    
+    /*fb及back*/
+    div.fb_back {
+        height: 70px;
+        margin-top: 20px;
+        div.back_link {
+            float: right;
+            width: 63px;
+            height: 48px;
+
+            a {
+                display: block;
+                width: 63px;
+                height: 48px;
+                @include replace-text("news/btn_list.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+        }
+        div.fb-like {
+            margin-top: -60px;
+        }
+    }
 }

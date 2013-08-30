@@ -7,14 +7,16 @@ div.all_vs {
 }
 /* line 6, ../sass/index.scss */
 div.all_vs .slideshow {
-  height: 480px;
   width: 1024px;
+  height: 480px;
 }
 /* line 10, ../sass/index.scss */
 div.all_vs .slideshow img {
+  width: 1024px;
+  height: 480px;
   padding: 0;
 }
-/* line 16, ../sass/index.scss */
+/* line 18, ../sass/index.scss */
 div.all_vs #nav {
   position: absolute;
   margin-left: 0;
@@ -24,7 +26,7 @@ div.all_vs #nav {
   bottom: 30px;
   right: 33px;
 }
-/* line 25, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 div.all_vs #nav li {
   width: 48px;
   float: right;
@@ -33,27 +35,27 @@ div.all_vs #nav li {
   padding: 1px;
   border: 1px solid #b09873;
 }
-/* line 34, ../sass/index.scss */
+/* line 36, ../sass/index.scss */
 div.all_vs #nav a {
   width: 48px;
   display: block;
 }
-/* line 38, ../sass/index.scss */
+/* line 40, ../sass/index.scss */
 div.all_vs #nav a:focus {
   outline: none;
 }
-/* line 43, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 div.all_vs #nav li.activeSlide {
   border: 3px solid #b09873;
 }
-/* line 47, ../sass/index.scss */
+/* line 49, ../sass/index.scss */
 div.all_vs #nav img {
   border: none;
   display: block;
 }
 
 /*連結按鈕*/
-/* line 55, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 ul.link_button {
   position: relative;
   width: 941px;
@@ -63,7 +65,7 @@ ul.link_button {
   background: url("../images/link_bg.png") no-repeat;
   line-height: 88px;
 }
-/* line 64, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 ul.link_button li {
   list-style: none;
   display: inline-block;
@@ -72,14 +74,14 @@ ul.link_button li {
   width: 234px;
   border-right: 1px solid #b8b8b8;
 }
-/* line 72, ../sass/index.scss */
+/* line 74, ../sass/index.scss */
 ul.link_button li button {
   /*link區第一個按鈕*/
   /*link區第二個按鈕*/
   /*link區第三個按鈕*/
   /*link區第四個按鈕*/
 }
-/* line 75, ../sass/index.scss */
+/* line 77, ../sass/index.scss */
 ul.link_button li button.button_1 {
   position: relative;
   width: 234px;
@@ -89,11 +91,11 @@ ul.link_button li button.button_1 {
   background-image: url("../images/link_button_1.jpg");
   background-repeat: no-repeat;
 }
-/* line 84, ../sass/index.scss */
+/* line 86, ../sass/index.scss */
 ul.link_button li button.button_1:hover {
   background-image: url("../images/link_button_1_hover.jpg");
 }
-/* line 90, ../sass/index.scss */
+/* line 92, ../sass/index.scss */
 ul.link_button li button.button_2 {
   position: relative;
   width: 234px;
@@ -103,11 +105,11 @@ ul.link_button li button.button_2 {
   background-image: url("../images/link_button_2.jpg");
   background-repeat: no-repeat;
 }
-/* line 99, ../sass/index.scss */
+/* line 101, ../sass/index.scss */
 ul.link_button li button.button_2:hover {
   background-image: url("../images/link_button_2_hover.jpg");
 }
-/* line 105, ../sass/index.scss */
+/* line 107, ../sass/index.scss */
 ul.link_button li button.button_3 {
   position: relative;
   width: 234px;
@@ -117,11 +119,11 @@ ul.link_button li button.button_3 {
   background-image: url("../images/link_button_3.jpg");
   background-repeat: no-repeat;
 }
-/* line 114, ../sass/index.scss */
+/* line 116, ../sass/index.scss */
 ul.link_button li button.button_3:hover {
   background-image: url("../images/link_button_3_hover.jpg");
 }
-/* line 120, ../sass/index.scss */
+/* line 122, ../sass/index.scss */
 ul.link_button li button.button_4 {
   position: relative;
   width: 234px;
@@ -131,7 +133,7 @@ ul.link_button li button.button_4 {
   background-image: url("../images/link_button_4.jpg");
   background-repeat: no-repeat;
 }
-/* line 129, ../sass/index.scss */
+/* line 131, ../sass/index.scss */
 ul.link_button li button.button_4:hover {
   background-image: url("../images/link_button_4_hover.jpg");
 }

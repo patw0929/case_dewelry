@@ -142,8 +142,9 @@ div.header_wrap header.header div.page_breadcrumb {
   right: 0;
   top: 100px;
   z-index: 99;
+  font-size: .85em;
 }
-/* line 156, ../sass/header.scss */
+/* line 157, ../sass/header.scss */
 div.header_wrap header.header div.page_breadcrumb a {
   color: #c6bc92;
 }

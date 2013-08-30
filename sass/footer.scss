@@ -31,12 +31,16 @@ footer.footer {
 
             a {
             	display: inline-block;
-            	margin-top: 4px;
+            	margin-top: 3px;
+            	*display: block;
+            	*float: left;
+            	*margin-left: 5px;
             }
 
             a.facebook {
             	width: 16px;
             	height: 16px;
+            	*margin-left: 12px;
             	@include replace-text("footer/social_icon_facebook.png");
 
             	&:hover {
