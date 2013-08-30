@@ -1,0 +1,57 @@
+div.all_vs{
+	width:1024px;
+	position: relative;
+	/*大張輪播圖*/
+	.slideshow{
+		height: 480px;
+		width: 1024px;
+		
+		img{
+			padding: 0px;
+		}
+	}
+	
+	/*小張輪播圖*/
+	#nav{
+		position: absolute;
+		margin-left:0;
+		width: 974px;
+		overflow:hidden;
+		z-index: 99999;
+		bottom:30px;
+		right:50px;
+		li{
+			width: 48px;
+			float: right;
+			margin: 8px;
+			list-style: none;
+			padding:1px;
+			border: 1px solid rgb(176, 152, 115);
+		}
+		
+		a{
+			width: 48px;
+			display: block;
+			
+			
+			&:focus{
+				outline: none;
+			}
+		}
+		
+		li.activeSlide{
+			
+				border:3px solid rgb(176, 152, 115);
+			
+		}
+		
+		img{
+			border: none;
+			display: block;
+			
+		}
+	}
+	
+
+}
+

@@ -1,0 +1,53 @@
+/* line 1, ../sass/index.scss */
+div.all_vs {
+  width: 1024px;
+  position: relative;
+  /*大張輪播圖*/
+  /*小張輪播圖*/
+}
+/* line 5, ../sass/index.scss */
+div.all_vs .slideshow {
+  height: 480px;
+  width: 1024px;
+}
+/* line 9, ../sass/index.scss */
+div.all_vs .slideshow img {
+  padding: 0px;
+}
+/* line 15, ../sass/index.scss */
+div.all_vs #nav {
+  position: absolute;
+  margin-left: 0;
+  width: 974px;
+  overflow: hidden;
+  z-index: 99999;
+  bottom: 30px;
+  right: 50px;
+}
+/* line 23, ../sass/index.scss */
+div.all_vs #nav li {
+  width: 48px;
+  float: right;
+  margin: 8px;
+  list-style: none;
+  padding: 1px;
+  border: 1px solid #b09873;
+}
+/* line 32, ../sass/index.scss */
+div.all_vs #nav a {
+  width: 48px;
+  display: block;
+}
+/* line 37, ../sass/index.scss */
+div.all_vs #nav a:focus {
+  outline: none;
+}
+/* line 42, ../sass/index.scss */
+div.all_vs #nav li.activeSlide {
+  border: 3px solid #b09873;
+}
+/* line 48, ../sass/index.scss */
+div.all_vs #nav img {
+  border: none;
+  display: block;
+}

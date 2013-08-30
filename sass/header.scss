@@ -9,6 +9,7 @@ div.header_wrap{
 		background: url("../images/subnav/bg_shadow.png") no-repeat;
 		background-position: center;
 		position: absolute;
+		z-index:99999;
 		div.bg_color{
 			background-color: rgb(250, 248, 243);
 			width:100%;
@@ -112,7 +113,7 @@ div.header_wrap{
 						left:40px;
 						top:25px;
 						display:none;
-						z-index: 9999;
+						z-index: 999999;
 					}
 					
 					&.on{
