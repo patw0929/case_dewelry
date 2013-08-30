@@ -3,6 +3,7 @@
 div.header_wrap {
     position: relative;
     border-bottom: 1px dashed rgb(185, 184, 166);
+    z-index: 99999;
 
     nav.sub_nav {
         display: none;
@@ -23,6 +24,8 @@ div.header_wrap {
         ul.sub_nav_wedding_ul, ul.sub_nav_jewelry_ul {
             display: none;
             margin-left: 0;
+            *width: 800px;
+            *margin: 0 auto;
             text-align: center;
 
             li {
@@ -34,6 +37,8 @@ div.header_wrap {
                 line-height: 38px;
                 font-size: .8em;
                 margin-left: -4px;
+                *display: block;
+                *float: left;
 
                 &.first {
                     border-left: 1px dotted rgb(210, 199, 165);
@@ -83,17 +88,20 @@ div.header_wrap {
                 li {
                     position: relative;
                     display: inline-block;
-                    *display: inline;
                     width: 135px;
                     text-align: center;
                     height: 30px;
                     line-height: 30px;
                     font-size: .8em;
+                    *float: left;
                     
                     img.d_line {
                         float: right;
                         position: relative;
                         bottom: -8px;
+                        *position: absolute;
+                        *right: 0;
+                        *bottom: 10px;
                     }
                     
                     
@@ -113,9 +121,7 @@ div.header_wrap {
                             color: rgb(147, 31, 68);
                         }
                     }
-                    
-                    
-                    
+
                     img.hinter {
                         position: absolute;
                         left: 40px;

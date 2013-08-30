@@ -25,11 +25,12 @@ div.jewelry_zone{
 				
 				
 				
-				div.product_item{
+				div.product_item {
 					position:relative;
 					height:246px;
 					margin-top:10px;
-					div.product_info{
+
+					div.product_info {
 						display: none;
 						text-align: left;
 						padding:5px;
@@ -49,13 +50,11 @@ div.jewelry_zone{
 							}
 						}
 					}
-					
+
+					&:hover > div.product_info {
+						display: block;
+					}
 				}
-				
-				
-				
-				
-				
 			}
 		}
 	}

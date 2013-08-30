@@ -3,30 +3,30 @@
 div.wedding_zone {
   margin-top: 50px;
 }
-/* line 9, ../sass/wedding_list.scss */
+/* line 8, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td {
   width: 263px;
   height: 246px;
   border: 1px solid #dac9bd;
   text-align: center;
 }
-/* line 16, ../sass/wedding_list.scss */
+/* line 14, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td.next_page {
   background-color: #f6f2ed;
   cursor: pointer;
 }
-/* line 20, ../sass/wedding_list.scss */
+/* line 19, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td.last_page {
   background-color: #f6f2ed;
   cursor: pointer;
 }
-/* line 28, ../sass/wedding_list.scss */
+/* line 24, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td div.product_item {
   position: relative;
   height: 246px;
   margin-top: 10px;
 }
-/* line 32, ../sass/wedding_list.scss */
+/* line 29, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td div.product_item div.product_info {
   display: none;
   text-align: left;
@@ -35,17 +35,21 @@ div.wedding_zone table.wedding_list tr td div.product_item div.product_info {
   bottom: 0;
   right: 0;
   background-color: #9e968a;
-  color: white;
+  color: #fff;
   width: 125px;
   height: 70px;
   font-size: .8em;
 }
-/* line 44, ../sass/wedding_list.scss */
+/* line 42, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td div.product_item div.product_info p {
   margin: 0;
 }
-/* line 46, ../sass/wedding_list.scss */
+/* line 45, ../sass/wedding_list.scss */
 div.wedding_zone table.wedding_list tr td div.product_item div.product_info p.more {
   float: right;
   margin-top: 10px;
+}
+/* line 52, ../sass/wedding_list.scss */
+div.wedding_zone table.wedding_list tr td div.product_item:hover > div.product_info {
+  display: block;
 }

@@ -26,7 +26,7 @@ div.jewelry_zone table.jewelry_list tr td div.product_item {
   height: 246px;
   margin-top: 10px;
 }
-/* line 32, ../sass/jewelry_list.scss */
+/* line 33, ../sass/jewelry_list.scss */
 div.jewelry_zone table.jewelry_list tr td div.product_item div.product_info {
   display: none;
   text-align: left;
@@ -40,12 +40,16 @@ div.jewelry_zone table.jewelry_list tr td div.product_item div.product_info {
   height: 70px;
   font-size: .8em;
 }
-/* line 44, ../sass/jewelry_list.scss */
+/* line 45, ../sass/jewelry_list.scss */
 div.jewelry_zone table.jewelry_list tr td div.product_item div.product_info p {
   margin: 0;
 }
-/* line 46, ../sass/jewelry_list.scss */
+/* line 47, ../sass/jewelry_list.scss */
 div.jewelry_zone table.jewelry_list tr td div.product_item div.product_info p.more {
   float: right;
   margin-top: 10px;
+}
+/* line 54, ../sass/jewelry_list.scss */
+div.jewelry_zone table.jewelry_list tr td div.product_item:hover > div.product_info {
+  display: block;
 }
