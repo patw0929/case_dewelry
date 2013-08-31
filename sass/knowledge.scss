@@ -8,13 +8,19 @@ div.middle_container {
 
 .content {
     position: relative;
-    
-    margin:0 auto;
-    width:1024px;
+    margin: 0 auto;
+    width: 1024px;
+
+    table img {
+        display: block;
+        max-width: none;
+    }
+
     ul.nav {
         position: absolute;
         top: 50px;
         left: 50px;
+        *zoom: 1;
 
         li {
             list-style: none;
@@ -23,6 +29,7 @@ div.middle_container {
 
             a {
                 display: inline-block;
+                *display: block;
                 height: 55px;
             }
 
