@@ -25,7 +25,7 @@ div.header_wrap nav.sub_nav div.bg_color {
 div.header_wrap nav.sub_nav ul.sub_nav_wedding_ul, div.header_wrap nav.sub_nav ul.sub_nav_jewelry_ul {
   display: none;
   margin-left: 0;
-  *width: 800px;
+  *width: 710px;
   *margin: 0 auto;
   text-align: center;
 }
