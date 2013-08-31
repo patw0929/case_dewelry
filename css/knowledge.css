@@ -1,30 +1,33 @@
 /* line 3, ../sass/knowledge.scss */
 div.middle_container {
+  width: 100% !important;
   background: #000;
 }
 
-/* line 7, ../sass/knowledge.scss */
+/* line 9, ../sass/knowledge.scss */
 .content {
   position: relative;
+  margin: 0 auto;
+  width: 1024px;
 }
-/* line 10, ../sass/knowledge.scss */
+/* line 14, ../sass/knowledge.scss */
 .content ul.nav {
   position: absolute;
   top: 50px;
   left: 50px;
 }
-/* line 15, ../sass/knowledge.scss */
+/* line 19, ../sass/knowledge.scss */
 .content ul.nav li {
   list-style: none;
   display: block;
   float: left;
 }
-/* line 20, ../sass/knowledge.scss */
+/* line 24, ../sass/knowledge.scss */
 .content ul.nav li a {
   display: inline-block;
   height: 55px;
 }
-/* line 25, ../sass/knowledge.scss */
+/* line 29, ../sass/knowledge.scss */
 .content ul.nav li.diamond a {
   width: 150px;
   text-indent: -119988px;
@@ -34,11 +37,11 @@ div.middle_container {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 29, ../sass/knowledge.scss */
+/* line 33, ../sass/knowledge.scss */
 .content ul.nav li.diamond a:hover {
   background-position: bottom;
 }
-/* line 34, ../sass/knowledge.scss */
+/* line 38, ../sass/knowledge.scss */
 .content ul.nav li.gradingreport a {
   width: 200px;
   text-indent: -119988px;
@@ -48,11 +51,11 @@ div.middle_container {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 38, ../sass/knowledge.scss */
+/* line 42, ../sass/knowledge.scss */
 .content ul.nav li.gradingreport a:hover {
   background-position: bottom;
 }
-/* line 43, ../sass/knowledge.scss */
+/* line 47, ../sass/knowledge.scss */
 .content ul.nav li.design a {
   width: 145px;
   text-indent: -119988px;
@@ -62,11 +65,11 @@ div.middle_container {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 47, ../sass/knowledge.scss */
+/* line 51, ../sass/knowledge.scss */
 .content ul.nav li.design a:hover {
   background-position: bottom;
 }
-/* line 52, ../sass/knowledge.scss */
+/* line 56, ../sass/knowledge.scss */
 .content ul.nav li.productcare a {
   width: 192px;
   text-indent: -119988px;
@@ -76,11 +79,11 @@ div.middle_container {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 56, ../sass/knowledge.scss */
+/* line 60, ../sass/knowledge.scss */
 .content ul.nav li.productcare a:hover {
   background-position: bottom;
 }
-/* line 61, ../sass/knowledge.scss */
+/* line 65, ../sass/knowledge.scss */
 .content ul.nav li.guaranteeservice a {
   width: 239px;
   text-indent: -119988px;
@@ -90,16 +93,16 @@ div.middle_container {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 65, ../sass/knowledge.scss */
+/* line 69, ../sass/knowledge.scss */
 .content ul.nav li.guaranteeservice a:hover {
   background-position: bottom;
 }
-/* line 70, ../sass/knowledge.scss */
+/* line 74, ../sass/knowledge.scss */
 .content ul.nav li.on > a {
   background-position: bottom;
 }
 
-/* line 78, ../sass/knowledge.scss */
+/* line 82, ../sass/knowledge.scss */
 footer.footer {
   margin-top: 0;
 }

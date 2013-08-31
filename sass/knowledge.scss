@@ -1,12 +1,16 @@
 @import "compass/utilities/text/replacement";
 
 div.middle_container {
-    background: #000;
+	width:100% !important;
+	background: #000;
+	
 }
 
 .content {
     position: relative;
-
+    
+    margin:0 auto;
+    width:1024px;
     ul.nav {
         position: absolute;
         top: 50px;
