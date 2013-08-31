@@ -1,6 +1,18 @@
-.story{
-	margin-top:50px;
-	#Table_01{
-		margin:0 auto;
-	}
+.story {
+    margin-top: 50px;
+
+    table {
+        margin: 0 auto;
+        width: 961px;
+        border-spacing: 0;
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: none;
+        }
+    }
 }

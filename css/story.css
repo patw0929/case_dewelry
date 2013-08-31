@@ -2,7 +2,18 @@
 .story {
   margin-top: 50px;
 }
-/* line 3, ../sass/story.scss */
-.story #Table_01 {
+/* line 4, ../sass/story.scss */
+.story table {
   margin: 0 auto;
+  width: 961px;
+  border-spacing: 0;
+}
+/* line 9, ../sass/story.scss */
+.story table td {
+  padding: 0;
+}
+/* line 13, ../sass/story.scss */
+.story table img {
+  display: block;
+  max-width: none;
 }

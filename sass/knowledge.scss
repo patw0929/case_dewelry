@@ -11,9 +11,18 @@ div.middle_container {
     margin: 0 auto;
     width: 1024px;
 
-    table img {
-        display: block;
-        max-width: none;
+    table {
+        border-spacing: 0;
+        width: 1024px;
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            max-width: none;
+        }
     }
 
     ul.nav {
