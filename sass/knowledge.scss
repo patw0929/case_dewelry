@@ -1,0 +1,80 @@
+@import "compass/utilities/text/replacement";
+
+div.middle_container {
+    background: #000;
+}
+
+.content {
+    position: relative;
+
+    ul.nav {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+        li {
+            list-style: none;
+            display: block;
+            float: left;
+
+            a {
+                display: inline-block;
+                height: 55px;
+            }
+
+            &.diamond a {
+                width: 150px;
+                @include replace-text("knowledge/knowledge_nav_01.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+
+            &.gradingreport a {
+                width: 200px;
+                @include replace-text("knowledge/knowledge_nav_02.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+
+            &.design a {
+                width: 145px;
+                @include replace-text("knowledge/knowledge_nav_03.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+
+            &.productcare a {
+                width: 192px;
+                @include replace-text("knowledge/knowledge_nav_04.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+
+            &.guaranteeservice a {
+                width: 239px;
+                @include replace-text("knowledge/knowledge_nav_05.png", left, top);
+
+                &:hover {
+                    background-position: bottom;
+                }
+            }
+
+            &.on > a {
+                background-position: bottom;
+            }
+        }
+
+    }
+}
+
+footer.footer {
+    margin-top: 0;
+}
