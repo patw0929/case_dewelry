@@ -50,7 +50,9 @@ $border-color: #e1dcd3;
 }
 
 .content {
-
+    width: 485px;
+    float: right;
+    margin-left: 35px;
     padding: 50px 0;
     *padding: 50px 0 0 0;
     color: #98836c;
@@ -70,7 +72,7 @@ $border-color: #e1dcd3;
         margin: 0 20px 0 10px;
         font-weight: normal;
         font-size: .95em;
-        width: 400px;
+        width: 385px;
         vertical-align: top;
         line-height: 1.7em;
     }
@@ -81,7 +83,7 @@ $border-color: #e1dcd3;
         border: 0;
         height: 8px;
         background: url(../images/news/hr.png) no-repeat;
-        margin: 10px 0 10px 0;
+        margin: 3px 0 10px 0;
         *display: list-item;
         *list-style: url(../images/news/hr.png) inside;
         *filter: alpha(opacity=0);
@@ -107,7 +109,7 @@ $border-color: #e1dcd3;
                 width: 190px;
                 height: 48px;
                 background: url("../images/news/btn_back.png") top no-repeat;
-                margin-right: 10px;
+                margin-right: 5px;
 
                 a {
                     color: #b3a18e;
@@ -127,7 +129,7 @@ $border-color: #e1dcd3;
                 width: 190px;
                 height: 48px;
                 background: url("../images/news/btn_next.png") top no-repeat;
-                margin-left: 10px;
+                margin-left: 5px;
 
                 a {
                     color: #b3a18e;
