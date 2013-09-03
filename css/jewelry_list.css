@@ -134,5 +134,6 @@ div.jewelry_zone .jewelry_list li div.product_item span {
   top: 0;
   left: 0;
   z-index: 1;
+  cursor: pointer;
   background: url("../images/empty.gif");
 }
