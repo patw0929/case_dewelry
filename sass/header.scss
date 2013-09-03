@@ -14,6 +14,8 @@ div.header_wrap {
         background: url("../images/subnav/bg_shadow.png") no-repeat;
         background-position: center;
         position: absolute;
+        top: 86px;
+        *top: 116px;
         z-index: 99999;
 
         div.bg_color {
