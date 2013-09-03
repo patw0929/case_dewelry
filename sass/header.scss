@@ -4,7 +4,7 @@
 div.header_wrap {
     position: relative;
     border-bottom: 1px dashed rgb(185, 184, 166);
-    *height: 115px;
+    *height: 97px;
     z-index: 99999;
 
     nav.sub_nav {
@@ -14,8 +14,8 @@ div.header_wrap {
         background: url("../images/subnav/bg_shadow.png") no-repeat;
         background-position: center;
         position: absolute;
-        top: 86px;
-        *top: 116px;
+        top: 96px;
+        *top: 98px;
         z-index: 99999;
 
         div.bg_color {
@@ -71,7 +71,8 @@ div.header_wrap {
     
     header.header {
         width: $layout_width;
-        margin: 10px auto 0 auto;
+        margin: 0 auto;
+        padding-top: 10px;
         position: relative;
 
         div.logo {
@@ -81,6 +82,7 @@ div.header_wrap {
             h1 {
                 width: 140px;
                 height: 45px;
+                margin: 0;
                 @include replace-text("logo_dewelry.png");
 
                 a {

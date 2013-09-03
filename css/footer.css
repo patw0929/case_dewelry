@@ -1,10 +1,12 @@
 /* line 4, ../sass/footer.scss */
 footer.footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 34px;
   background-color: #5e513d;
 }
-/* line 9, ../sass/footer.scss */
+/* line 11, ../sass/footer.scss */
 footer.footer div.footer_inner {
   width: 1024px;
   margin: 0 auto;
@@ -13,14 +15,14 @@ footer.footer div.footer_inner {
   /* social icon */
   /* 人員招募與隱私 */
 }
-/* line 15, ../sass/footer.scss */
+/* line 17, ../sass/footer.scss */
 footer.footer div.footer_inner p.rights {
   color: #9f907a;
   margin: -6px 0 0 0;
   padding: 0;
   font-size: .85em;
 }
-/* line 23, ../sass/footer.scss */
+/* line 25, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon {
   width: 83px;
   height: 20px;
@@ -30,7 +32,7 @@ footer.footer div.footer_inner div.social_icon {
   top: -4px;
   padding: 0;
 }
-/* line 32, ../sass/footer.scss */
+/* line 34, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a {
   display: inline-block;
   margin-top: 3px;
@@ -38,7 +40,7 @@ footer.footer div.footer_inner div.social_icon a {
   *float: left;
   *margin-left: 5px;
 }
-/* line 40, ../sass/footer.scss */
+/* line 42, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.facebook {
   width: 16px;
   height: 16px;
@@ -50,7 +52,7 @@ footer.footer div.footer_inner div.social_icon a.facebook {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 46, ../sass/footer.scss */
+/* line 48, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.facebook:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -59,7 +61,7 @@ footer.footer div.footer_inner div.social_icon a.facebook:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 51, ../sass/footer.scss */
+/* line 53, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.googleplus {
   width: 16px;
   height: 16px;
@@ -70,7 +72,7 @@ footer.footer div.footer_inner div.social_icon a.googleplus {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 56, ../sass/footer.scss */
+/* line 58, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.googleplus:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -79,7 +81,7 @@ footer.footer div.footer_inner div.social_icon a.googleplus:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 61, ../sass/footer.scss */
+/* line 63, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.email {
   width: 16px;
   height: 16px;
@@ -90,7 +92,7 @@ footer.footer div.footer_inner div.social_icon a.email {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 66, ../sass/footer.scss */
+/* line 68, ../sass/footer.scss */
 footer.footer div.footer_inner div.social_icon a.email:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -99,13 +101,13 @@ footer.footer div.footer_inner div.social_icon a.email:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 73, ../sass/footer.scss */
+/* line 75, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy {
   position: absolute;
   right: 0;
   top: 12px;
 }
-/* line 78, ../sass/footer.scss */
+/* line 80, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy a {
   width: 80px;
   height: 20px;
@@ -115,7 +117,7 @@ footer.footer div.footer_inner div.job_and_privacy a {
   color: #877966;
   text-decoration: none;
 }
-/* line 86, ../sass/footer.scss */
+/* line 88, ../sass/footer.scss */
 footer.footer div.footer_inner div.job_and_privacy a:hover {
   color: #afa194;
 }

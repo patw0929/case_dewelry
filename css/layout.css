@@ -1,7 +1,19 @@
 /* line 4, ../sass/layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 8, ../sass/layout.scss */
+#container {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 14, ../sass/layout.scss */
 div.middle_container {
   width: 1024px;
-  margin: 2px auto 0 auto;
+  margin: 2px auto 100px auto;
   overflow: hidden;
   *zoom: 1;
 }
