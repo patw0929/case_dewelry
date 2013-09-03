@@ -1,3 +1,4 @@
+@import "compass/utilities/text/replacement";
 @import "variables_custom";
 
 div.header_wrap {
@@ -73,6 +74,18 @@ div.header_wrap {
         div.logo {
             width:140px;
             margin:0 auto;
+
+            h1 {
+                width: 140px;
+                height: 45px;
+                @include replace-text("logo_dewelry.png");
+
+                a {
+                    display: block;
+                    width: 140px;
+                    height: 45px;
+                }
+            }
         }
         
         /*主導覽列*/
