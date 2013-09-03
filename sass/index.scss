@@ -69,7 +69,11 @@ ul.link_button {
         *display: block;
         *float: left;
         width: 234px;
-        border-right: 1px solid rgb(184, 184, 184);
+        border-right: 1px dashed rgb(184, 184, 184);
+
+        &:nth-last-child(1) {
+            border-right: 0;
+        }
 
         button {
 
