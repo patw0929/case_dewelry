@@ -13,7 +13,12 @@ html, body {
 /* line 14, ../sass/layout.scss */
 div.middle_container {
   width: 1024px;
-  margin: 2px auto 100px auto;
+  margin: 2px auto 0 auto;
   overflow: hidden;
   *zoom: 1;
+}
+
+/* line 20, ../sass/layout.scss */
+.main {
+  margin-bottom: 50px;
 }
