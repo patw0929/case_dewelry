@@ -83,7 +83,7 @@ $border-color: #e1dcd3;
         @include box-shadow(#898989 1px 1px 3px, #fff 1px 1px 2px 1px inset);
     }
 
-    li.on a {
+    li a:hover, li.on a {
         background-color: #b3a387;
         color: #fff;
     }
