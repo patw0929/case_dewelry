@@ -1,19 +1,21 @@
 @import "compass/utilities/text/replacement";
+@import "compass/utilities/general/clearfix";
 @import "compass/css3/transition";
 
 /* wedding 列表 */
 div.wedding_zone {
-    margin-top: 50px;
+    margin: 50px auto;
 
     .wedding_list {
         width: 100%;
+        @include clearfix;
 
         li {
             list-style: none;
             display: block;
             float: left;
             width: 251px;
-            height: 246px;
+            height: 240px;
             border: 0 solid rgb(218, 201, 189);
             border-width: 1px 0 0 1px;
             text-align: center;
@@ -35,11 +37,10 @@ div.wedding_zone {
             &.next_page {
                 background-color: rgb(246, 242, 237);
                 cursor: pointer;
-                @include replace-text("wedding/next_page.jpg");
+                @include replace-text("wedding/next_page.jpg", left, top);
 
                 &:hover {
-                    background: rgb(241, 237, 227);
-                    @include replace-text("wedding/next_page_hover.jpg");
+                    background-position: left bottom;
                 }
 
                 a {
@@ -52,11 +53,10 @@ div.wedding_zone {
             &.last_page {
                 background-color: rgb(246, 242, 237);
                 cursor: pointer;
-                @include replace-text("wedding/last_page.jpg");
+                @include replace-text("wedding/last_page.jpg", left, top);
 
                 &:hover {
-                    background: rgb(241, 237, 227);
-                    @include replace-text("wedding/last_page_hover.jpg");
+                    background-position: left bottom;
                 }
 
                 a {
