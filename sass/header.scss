@@ -4,6 +4,7 @@
 div.header_wrap {
     position: relative;
     border-bottom: 1px dashed rgb(185, 184, 166);
+    *height: 115px;
     z-index: 99999;
 
     nav.sub_nav {
@@ -164,6 +165,7 @@ div.header_wrap {
             position: absolute;
             right: 0;
             top: 100px;
+            *top: 120px;
             z-index: 99;
             font-size: .85em;
             color: rgb(198, 188, 146);
