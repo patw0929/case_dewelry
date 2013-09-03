@@ -162,13 +162,12 @@ div.header_wrap header.header nav.main_nav ul.main_nav_ul li.on img.hinter {
 div.header_wrap header.header div.page_breadcrumb {
   position: absolute;
   right: 0;
-  top: 100px;
-  *top: 120px;
+  top: 120px;
   z-index: 99;
   font-size: .85em;
   color: #c6bc92;
 }
-/* line 177, ../sass/header.scss */
+/* line 176, ../sass/header.scss */
 div.header_wrap header.header div.page_breadcrumb a {
   color: #c6bc92;
 }
