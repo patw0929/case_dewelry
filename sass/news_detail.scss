@@ -56,26 +56,32 @@ $border-color: #e1dcd3;
     color: #98836c;
     font-size: .95em;
     font-family: Arial;
-    letter-spacing: .2em;
 
     time {
+        display: block;
+        float: left;
         border-right: 1px solid #98836c;
         padding-right: 5px;
     }
 
     h1 {
-        display: inline-block;
-        *display: inline;
-        margin: 0 0 0 10px;
+        display: block;
+        float: right;
+        margin: 0 20px 0 10px;
         font-weight: normal;
         font-size: .95em;
+        width: 400px;
+        vertical-align: top;
+        line-height: 1.7em;
     }
 
     hr {
+        float: left;
+        width: 100%;
         border: 0;
         height: 8px;
         background: url(../images/news/hr.png) no-repeat;
-        margin: 0 0 10px 0;
+        margin: 10px 0 10px 0;
         *display: list-item;
         *list-style: url(../images/news/hr.png) inside;
         *filter: alpha(opacity=0);
@@ -106,6 +112,7 @@ $border-color: #e1dcd3;
                 a {
                     color: #b3a18e;
                     display: inline-block;
+                    width: 120px;
                     padding-left: 70px;
                     margin-top: 5px;
                     text-decoration: none;
@@ -125,6 +132,7 @@ $border-color: #e1dcd3;
                 a {
                     color: #b3a18e;
                     display: inline-block;
+                    width: 120px;
                     padding-left: 5px;
                     margin-top: 5px;
                     text-decoration: none;
