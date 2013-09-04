@@ -1,11 +1,11 @@
-$(document).ready(function(){
+$(window).load(function(){
 	var document_height = $(document).height();
 	var header_wrap = $("div.header_wrap").height();
 	var middle_container = $("div.middle_container").height();
-	if((document_height - header_wrap) < middle_container){
-		var footer_height = document_height - header_wrap - middle_container;
+	
+	
+	var footer_height = document_height - header_wrap - middle_container;
 		$("footer.footer").css("height", footer_height + "px");
-	}
 });
 
 var timeout = 500,
