@@ -25,7 +25,7 @@ div.all_vs .slideshow img {
 div.all_vs #nav {
   position: absolute;
   margin-left: 0;
-  width: 974px;
+  width: auto;
   overflow: hidden;
   z-index: 99999;
   bottom: 30px;
@@ -34,33 +34,40 @@ div.all_vs #nav {
 /* line 31, ../sass/index.scss */
 div.all_vs #nav li {
   width: 48px;
-  float: right;
-  margin: 8px;
+  display: inline-block;
+  /*margin: 8px;*/
+  margin-right: 3px;
   list-style: none;
   padding: 1px;
   border: 1px solid #b09873;
+  height: 23px;
 }
-/* line 40, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 div.all_vs #nav a {
   width: 48px;
   display: block;
 }
-/* line 44, ../sass/index.scss */
+/* line 46, ../sass/index.scss */
 div.all_vs #nav a:focus {
   outline: none;
 }
-/* line 49, ../sass/index.scss */
-div.all_vs #nav li.activeSlide {
-  border: 3px solid #b09873;
+/* line 51, ../sass/index.scss */
+div.all_vs #nav li.activeSlide, div.all_vs #nav li:hover {
+  border: 2px solid #b09873;
+  width: 48px;
+  height: 23px;
+  overflow: hidden;
+  padding: 0px;
 }
-/* line 53, ../sass/index.scss */
+/* line 59, ../sass/index.scss */
 div.all_vs #nav img {
   border: none;
   display: block;
+  margin: 0;
 }
 
 /*連結按鈕*/
-/* line 61, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 ul.link_button {
   position: relative;
   width: 941px;
@@ -70,7 +77,7 @@ ul.link_button {
   background: url("../images/link_bg.png") no-repeat;
   line-height: 88px;
 }
-/* line 70, ../sass/index.scss */
+/* line 77, ../sass/index.scss */
 ul.link_button li {
   list-style: none;
   display: inline-block;
@@ -79,18 +86,18 @@ ul.link_button li {
   width: 234px;
   border-right: 1px dashed #b8b8b8;
 }
-/* line 78, ../sass/index.scss */
+/* line 85, ../sass/index.scss */
 ul.link_button li:nth-last-child(1) {
   border-right: 0;
 }
-/* line 82, ../sass/index.scss */
+/* line 89, ../sass/index.scss */
 ul.link_button li button {
   /*link區第一個按鈕*/
   /*link區第二個按鈕*/
   /*link區第三個按鈕*/
   /*link區第四個按鈕*/
 }
-/* line 85, ../sass/index.scss */
+/* line 92, ../sass/index.scss */
 ul.link_button li button.button_1 {
   position: relative;
   width: 234px;
@@ -101,11 +108,11 @@ ul.link_button li button.button_1 {
   background-repeat: no-repeat;
   background-position: top;
 }
-/* line 95, ../sass/index.scss */
+/* line 102, ../sass/index.scss */
 ul.link_button li button.button_1:hover {
   background-position: bottom;
 }
-/* line 101, ../sass/index.scss */
+/* line 108, ../sass/index.scss */
 ul.link_button li button.button_2 {
   position: relative;
   width: 234px;
@@ -116,11 +123,11 @@ ul.link_button li button.button_2 {
   background-repeat: no-repeat;
   background-position: top;
 }
-/* line 111, ../sass/index.scss */
+/* line 118, ../sass/index.scss */
 ul.link_button li button.button_2:hover {
   background-position: bottom;
 }
-/* line 117, ../sass/index.scss */
+/* line 124, ../sass/index.scss */
 ul.link_button li button.button_3 {
   position: relative;
   width: 234px;
@@ -131,11 +138,11 @@ ul.link_button li button.button_3 {
   background-repeat: no-repeat;
   background-position: top;
 }
-/* line 127, ../sass/index.scss */
+/* line 134, ../sass/index.scss */
 ul.link_button li button.button_3:hover {
   background-position: bottom;
 }
-/* line 133, ../sass/index.scss */
+/* line 140, ../sass/index.scss */
 ul.link_button li button.button_4 {
   position: relative;
   width: 234px;
@@ -146,7 +153,7 @@ ul.link_button li button.button_4 {
   background-repeat: no-repeat;
   background-position: top;
 }
-/* line 143, ../sass/index.scss */
+/* line 150, ../sass/index.scss */
 ul.link_button li button.button_4:hover {
   background-position: bottom;
 }

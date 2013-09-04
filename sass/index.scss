@@ -22,19 +22,21 @@ div.all_vs {
     #nav {
         position: absolute;
         margin-left: 0;
-        width: 974px;
+        width:auto;
         overflow: hidden;
         z-index: 99999;
         bottom: 30px;
         right: 33px;
-
+        
         li {
             width: 48px;
-            float: right;
-            margin: 8px;
+            display:inline-block;
+            /*margin: 8px;*/
+            margin-right:3px;
             list-style: none;
             padding: 1px;
             border: 1px solid rgb(176, 152, 115);
+            height:23px;
         }
 
         a {
@@ -46,13 +48,18 @@ div.all_vs {
             }
         }
 
-        li.activeSlide {
-            border:3px solid rgb(176, 152, 115);
+        li.activeSlide, li:hover {
+            border:2px solid rgb(176, 152, 115);
+            width:48px;
+            height:23px;
+            overflow:hidden;
+            padding:0px;
         }
 
         img {
             border: none;
             display: block;
+            margin:0;
         }
     }
 }
