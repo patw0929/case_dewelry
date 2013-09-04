@@ -1,12 +1,6 @@
 var timeout = 500,
 	closetimer = 0;
 
-//menu的七個item hover效果
-var item_hover = function(theElement, img_src){
-	$(theElement).children('img').attr("src", img_src);
-}
-
-
 //顯示hinter與否
 var hover_in = function (theElement, item) {
 
@@ -23,11 +17,13 @@ var hover_in = function (theElement, item) {
 	switch(item) {
 	case 'wedding':
 		$("nav.sub_nav").show();
+		$('.sub_nav .hinter').css('margin-left', '-85px').show();
 		$("ul.sub_nav_wedding_ul").show();
 		break;
 
 	case 'jewelry':
 		$("nav.sub_nav").show();
+		$('.sub_nav .hinter').css('margin-left', '-20px').show();
 		$("ul.sub_nav_jewelry_ul").show();
 		break;
 	}
@@ -42,11 +38,13 @@ var hover_out = function (theElement, item) {
 	switch (item) {
 	case 'wedding':
 		$("nav.sub_nav").hide();
+		$('.sub_nav .hinter').hide();
 		$("ul.sub_nav_wedding_ul").hide();
 		break;
 
 	case 'jewelry':
 		$("nav.sub_nav").hide();
+		$('.sub_nav .hinter').hide();
 		$("ul.sub_nav_jewelry_ul").hide();
 		break;
 	}
@@ -94,5 +92,9 @@ $(function () {
 		mclosetime($('.item_' + category + ' > a'), category);
 
 	});
+
+	// set focus
+	var a = $('.main_nav_ul > li.on').find('a');
+	a.addClass(a.data('category') + "-hover");
 
 });
