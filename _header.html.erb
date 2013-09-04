@@ -1,82 +1,75 @@
 <div class="header_wrap">
-	<header class="header">
-		<div class="logo">
-			<h1><a href="index.html">Dewelry</a></h1>
-		</div>
-		
-		
-		
-		<nav class="main_nav">
-			<ul class="main_nav_ul">
-				<li class="item_story <%= @on_story %>">
-					<a href="story.html" data-category="story" onmouseover="item_hover(this, './images/icon_1_story_hover.png')" onmouseout="item_hover(this, './images/icon_1_story.png')"><img src="./images/icon_1_story.png" class="item_icon" id="item_icon_story"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_news <%= @on_news %>">
-					<a href="news.html" data-category="news" onmouseover="item_hover(this, './images/icon_2_news_hover.png')" onmouseout="item_hover(this, './images/icon_2_news.png')"><img src="./images/icon_2_news.png" class="item_icon" id="item_icon_news"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_wedding <%= @on_wedding_list %>">
-					<a href="wedding_list.html" data-category="wedding" onmouseover="item_hover(this, './images/icon_3_wedding_hover.png')" onmouseout="item_hover(this, './images/icon_3_wedding.png')"><img src="./images/icon_3_wedding.png" class="item_icon" id="item_icon_wedding"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_jewelry <%= @on_jewelry_list %>">
-					<a href="jewelry_list.html" data-category="jewelry" onmouseover="item_hover(this, './images/icon_4_jewelry_hover.png')" onmouseout="item_hover(this, './images/icon_4_jewelry.png')"><img src="./images/icon_4_jewelry.png" class="item_icon" id="item_icon_jewelry"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_locations <%= @on_locations %>">
-					<a href="locations.html" data-category="locations" onmouseover="item_hover(this, './images/icon_5_locations_hover.png')" onmouseout="item_hover(this, './images/icon_5_locations.png')"><img src="./images/icon_5_locations.png" class="item_icon" id="item_icon_locations"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_knowledge <%= @on_knowledge %>">
-					<a href="knowledge_diamond.html" data-category="knowledge" onmouseover="item_hover(this, './images/icon_6_knowledge_hover.png')" onmouseout="item_hover(this, './images/icon_6_knowledge.png')"><img src="./images/icon_6_knowledge.png" class="item_icon" id="item_icon_knowledge"></a>
-					<img src="./images/d_line.png" class="d_line">
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-				
-				<li class="item_contact <%= @on_contact %>">
-					<a href="contact.html" data-category="contact" onmouseover="item_hover(this, './images/icon_7_contact_hover.png')" onmouseout="item_hover(this, './images/icon_7_contact.png')"><img src="./images/icon_7_contact.png" class="item_icon" id="item_icon_contact"></a>
-					<img src="./images/sub_nav_arrow.png" class="hinter">
-				</li>
-			</ul>
-		</nav>
-		
-		<div class="page_breadcrumb">
-			<%= yield :breadcrumb_content %>
-		</div>
-	</header><!-- end class header -->
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Dewelry</a></h1>
+        </div>
 
-	<!-- 次選單 -->
-	<nav class="sub_nav">
-		<div class="bg_color">
-			<!-- wedding次選單 -->
-			<ul class="sub_nav_wedding_ul" data-category="wedding">
-				<li class="first"><a href="#"><img src="./images/subnav/wedding/women_rings.png">WOMEN'S RINGS</a></li>
-				<li><a href="#"><img src="./images/subnav/wedding/wedding_rings.png">WEDDING RINGS</a></li>
-				<li><a href="#"><img src="./images/subnav/wedding/platinum_rings.png">PLATINUM RINGS</a></li>
-				<li><a href="#"><img src="./images/subnav/wedding/men_rings.png">MEN'S RINGS</a></li>
-			</ul>
-			<!-- jewelry次選單 -->
-			<ul class="sub_nav_jewelry_ul" data-category="jewelry">
-				<li class="first"><a href="#"><img src="./images/subnav/jewelry/diamond_ring.png">DIAMOND RINGS</a></li>
-				<li><a href="#"><img src="./images/subnav/jewelry/diamond_necklace.png">DIAMOND NECKLACE</a></li>
-				<li><a href="#"><img src="./images/subnav/jewelry/diamond_earrings.png">DIAMOND EARRINGS</a></li>
-				<li><a href="#"><img src="./images/subnav/jewelry/colored_stones.png">COLORED STONES</a></li>
-				<li><a href="#"><img src="./images/subnav/jewelry/natural_pearls.png">NATURAL PEARLS</a></li>
-			</ul>
-			
-		</div>
-	</nav><!-- end class sub_nav -->
-	
-	
+        <nav class="main_nav">
+            <ul class="main_nav_ul">
+                <li class="item_story <%= @on_story %>">
+                    <a href="story.html" data-category="story">Story</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_news <%= @on_news %>">
+                    <a href="news.html" data-category="news">News</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_wedding <%= @on_wedding_list %>">
+                    <a href="wedding_list.html" data-category="wedding">Wedding</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_jewelry <%= @on_jewelry_list %>">
+                    <a href="jewelry_list.html" data-category="jewelry">Jewelry</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_locations <%= @on_locations %>">
+                    <a href="locations.html" data-category="locations">Locations</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_knowledge <%= @on_knowledge %>">
+                    <a href="knowledge_diamond.html" data-category="knowledge">Knowledge</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+                <li class="item_contact <%= @on_contact %>">
+                    <a href="contact.html" data-category="contact">Contact</a>
+                    <img src="./images/d_line.png" class="d_line">
+                    <img src="./images/sub_nav_arrow.png" class="hinter">
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="page_breadcrumb">
+            <%= yield :breadcrumb_content %>
+        </div>
+    </header><!-- end class header -->
+
+    <!-- 次選單 -->
+    <nav class="sub_nav">
+        <div class="bg_color">
+            <!--[if IE 7]><div class="hinter"><img src="./images/sub_nav_arrow.png" class="hinter"></div><![endif]-->
+            <!-- wedding次選單 -->
+            <ul class="sub_nav_wedding_ul" data-category="wedding">
+                <li class="first"><a href="#"><img src="./images/subnav/wedding/women_rings.png">WOMEN'S RINGS</a></li>
+                <li><a href="#"><img src="./images/subnav/wedding/wedding_rings.png">WEDDING RINGS</a></li>
+                <li><a href="#"><img src="./images/subnav/wedding/platinum_rings.png">PLATINUM RINGS</a></li>
+                <li><a href="#"><img src="./images/subnav/wedding/men_rings.png">MEN'S RINGS</a></li>
+            </ul>
+            <!-- jewelry次選單 -->
+            <ul class="sub_nav_jewelry_ul" data-category="jewelry">
+                <li class="first"><a href="#"><img src="./images/subnav/jewelry/diamond_ring.png">DIAMOND RINGS</a></li>
+                <li><a href="#"><img src="./images/subnav/jewelry/diamond_necklace.png">DIAMOND NECKLACE</a></li>
+                <li><a href="#"><img src="./images/subnav/jewelry/diamond_earrings.png">DIAMOND EARRINGS</a></li>
+                <li><a href="#"><img src="./images/subnav/jewelry/colored_stones.png">COLORED STONES</a></li>
+                <li><a href="#"><img src="./images/subnav/jewelry/natural_pearls.png">NATURAL PEARLS</a></li>
+            </ul>
+        </div>
+    </nav><!-- end class sub_nav -->
+    
+    
 </div>

@@ -1,4 +1,5 @@
 @import "compass/utilities/text/replacement";
+@import "nav/*.png";
 @import "variables_custom";
 
 div.header_wrap {
@@ -14,9 +15,15 @@ div.header_wrap {
         background: url("../images/subnav/bg_shadow.png") no-repeat;
         background-position: center;
         position: absolute;
-        top: 96px;
+        top: 100px;
         *top: 98px;
         z-index: 99999;
+
+        .hinter {
+            position: absolute;
+            left: 50%;
+            margin-top: -4px;
+        }
 
         div.bg_color {
             background-color: rgb(250, 248, 243);
@@ -105,7 +112,6 @@ div.header_wrap {
                 padding-left: 30px;
 
                 li {
-                	
                     position: relative;
                     display: inline-block;
                     width: 135px;
@@ -115,8 +121,46 @@ div.header_wrap {
                     font-size: .8em;
                     *float: left;
                     
-                    
-                    
+                    &.item_story a {
+                        width: 101px;
+                        @include nav-sprite(story);
+                    }
+
+                    &.item_news a {
+                        width: 94px;
+                        @include nav-sprite(news);
+                    }
+
+                    &.item_wedding a {
+                        width: 106px;
+                        @include nav-sprite(wedding);
+                    }
+
+                    &.item_jewelry a {
+                        width: 101px;
+                        @include nav-sprite(jewelry);
+                    }
+
+                    &.item_story a {
+                        width: 101px;
+                        @include nav-sprite(story);
+                    }
+
+                    &.item_knowledge a {
+                        width: 123px;
+                        @include nav-sprite(knowledge);
+                    }
+
+                    &.item_locations a {
+                        width: 115px;
+                        @include nav-sprite(locations);
+                    }
+
+                    &.item_contact a {
+                        width: 114px;
+                        @include nav-sprite(contact);
+                    }
+
                     img.d_line {
                         float: right;
                         position: relative;
@@ -128,9 +172,12 @@ div.header_wrap {
                     
                     
                     a {
-                        
+                        height: 29px;
                         cursor: pointer;
                         text-decoration: none;
+                        display: inline-block;
+                        *display: block;
+                        @include hide-text;
                         
                         img.item_icon {
                             position: relative;
