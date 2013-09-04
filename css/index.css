@@ -76,6 +76,7 @@ ul.link_button {
   z-index: 999999;
   background: url("../images/link_bg.png") no-repeat;
   line-height: 88px;
+  margin-bottom: 50px;
 }
 /* line 77, ../sass/index.scss */
 ul.link_button li {
