@@ -64,8 +64,8 @@
 /* line 69, ../sass/news_detail.scss */
 .content h1 {
   display: block;
-  float: right;
-  margin: 0 20px 0 10px;
+  /*float: right;*/
+  margin: 0 20px 0 80px;
   font-weight: normal;
   font-size: .95em;
   width: 385px;
@@ -155,7 +155,7 @@
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/news/btn_list.png?1377910657');
+  background-image: url('../images/news/btn_list.png?1377885184');
   background-repeat: no-repeat;
   background-position: left top;
 }

@@ -3,6 +3,7 @@
 div.middle_container {
 	width:100% !important;
 	background: #000;
+	margin-top:4px;
 }
 
 .main {
@@ -13,7 +14,7 @@ div.middle_container {
     position: relative;
     margin: 0 auto;
     width: 1024px;
-
+    
     #gotop {
         display: none;
         position: fixed;
