@@ -14,7 +14,10 @@ var hover_in = function (theElement, item) {
 
 	var parent_li = theElement.parent();
 	$('li:not(.on)').find('img[class=hinter]').hide();
-	$(parent_li).find('img[class=hinter]').show();
+	if(!$(parent_li).hasClass('on')){
+		$(parent_li).find('img[class=hinter]').show();
+	}
+	
 	
 	$("nav.sub_nav").hide();
 	$('.sub_nav_' + item + '_ul').siblings().hide();
@@ -36,7 +39,10 @@ var hover_in = function (theElement, item) {
 var hover_out = function (theElement, item) {
 
 	var parent_li = theElement.parent();
-	$(parent_li).find('img[class=hinter]').hide();
+	if(!$(parent_li).hasClass('on')){
+		$(parent_li).find('img[class=hinter]').hide();
+	}
+	
 	
 	// 將次選單隱藏起來
 	switch (item) {
