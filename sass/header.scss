@@ -31,7 +31,8 @@ div.header_wrap {
             *width: 710px;
             *margin: 0 auto;
             text-align: center;
-
+            
+            
             li {
                 width: 144px;
                 display: inline-block;
@@ -104,6 +105,7 @@ div.header_wrap {
                 padding-left: 30px;
 
                 li {
+                	
                     position: relative;
                     display: inline-block;
                     width: 135px;
@@ -112,6 +114,8 @@ div.header_wrap {
                     line-height: 30px;
                     font-size: .8em;
                     *float: left;
+                    
+                    
                     
                     img.d_line {
                         float: right;
@@ -124,7 +128,7 @@ div.header_wrap {
                     
                     
                     a {
-                        color: rgb(198, 188, 146);
+                        
                         cursor: pointer;
                         text-decoration: none;
                         
@@ -133,10 +137,7 @@ div.header_wrap {
                             display: inline-block;
                             margin-right: 5px;
                             top: -2px;
-                        }
-                        
-                        &:hover {
-                            color: rgb(147, 31, 68);
+                       
                         }
                     }
 
@@ -149,10 +150,7 @@ div.header_wrap {
                     }
                     
                     &.on {
-                        a {
-                            color: rgb(235, 183, 185);
-                            
-                        }
+                        
                         img.hinter {
                             display: block;
                         }

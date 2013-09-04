@@ -1,6 +1,12 @@
 var timeout = 500,
 	closetimer = 0;
 
+//menu的七個item hover效果
+var item_hover = function(theElement, img_src){
+	$(theElement).children('img').attr("src", img_src);
+}
+
+
 //顯示hinter與否
 var hover_in = function (theElement, item) {
 
