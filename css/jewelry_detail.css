@@ -160,7 +160,7 @@ div.product_info div.product_more {
   clear: both;
   width: 520px;
   height: 100px;
-  margin-top: 110px;
+  padding-top: 10px;
 }
 /* line 172, ../sass/jewelry_detail.scss */
 div.product_info div.product_more div.product_more_title_zone {
