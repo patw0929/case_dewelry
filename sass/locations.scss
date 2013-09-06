@@ -48,10 +48,13 @@
                 font-weight: normal;
                 font-size: .85em;
                 list-style-type: disc;
+                vertical-align: top;
+                *padding-top: 5px;
 
                 a {
                     display: block;
                     color: #978a72;
+                    cursor: pointer;
 
                     &:hover {
                         color: #000;
@@ -61,10 +64,12 @@
                     span {
                         display: inline-block;
                         vertical-align: top;
+                        *margin-top: -5px;
                     }
 
                     span.city {
                         width: 55px;
+                        height: auto;
                     }
 
                     span.store {

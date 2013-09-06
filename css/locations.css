@@ -51,42 +51,47 @@
   font-weight: normal;
   font-size: .85em;
   list-style-type: disc;
+  vertical-align: top;
+  *padding-top: 5px;
 }
-/* line 52, ../sass/locations.scss */
+/* line 54, ../sass/locations.scss */
 .storelist > ul > li > ul li a {
   display: block;
   color: #978a72;
+  cursor: pointer;
 }
-/* line 56, ../sass/locations.scss */
+/* line 59, ../sass/locations.scss */
 .storelist > ul > li > ul li a:hover {
   color: #000;
   text-decoration: none;
 }
-/* line 61, ../sass/locations.scss */
+/* line 64, ../sass/locations.scss */
 .storelist > ul > li > ul li a span {
   display: inline-block;
   vertical-align: top;
-}
-/* line 66, ../sass/locations.scss */
-.storelist > ul > li > ul li a span.city {
-  width: 55px;
+  *margin-top: -5px;
 }
 /* line 70, ../sass/locations.scss */
+.storelist > ul > li > ul li a span.city {
+  width: 55px;
+  height: auto;
+}
+/* line 75, ../sass/locations.scss */
 .storelist > ul > li > ul li a span.store {
   width: 285px;
 }
-/* line 75, ../sass/locations.scss */
+/* line 80, ../sass/locations.scss */
 .storelist > ul > li > ul li.on a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 84, ../sass/locations.scss */
+/* line 89, ../sass/locations.scss */
 .main {
   position: relative;
 }
 
-/* line 88, ../sass/locations.scss */
+/* line 93, ../sass/locations.scss */
 .map {
   position: absolute;
   right: 0;
