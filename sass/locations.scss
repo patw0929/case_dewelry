@@ -50,11 +50,25 @@
                 list-style-type: disc;
 
                 a {
+                    display: block;
                     color: #978a72;
 
                     &:hover {
                         color: #000;
                         text-decoration: none;
+                    }
+ 
+                    span {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    span.city {
+                        width: 55px;
+                    }
+
+                    span.store {
+                        width: 285px;
                     }
                 }
 
