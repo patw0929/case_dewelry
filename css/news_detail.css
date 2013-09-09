@@ -33,8 +33,13 @@
   display: inline-block;
   *display: inline;
   margin-left: 8px;
+  width: 115px;
 }
-/* line 41, ../sass/news_detail.scss */
+/* line 40, ../sass/news_detail.scss */
+.images .thumbs li img {
+  width: 115px;
+}
+/* line 45, ../sass/news_detail.scss */
 .images .thumbs .focus {
   margin: -10px 0 0 0;
   border: 5px solid #927c55;
@@ -43,7 +48,7 @@
   *height: 0;
 }
 
-/* line 52, ../sass/news_detail.scss */
+/* line 56, ../sass/news_detail.scss */
 .content {
   width: 485px;
   float: right;
@@ -54,14 +59,14 @@
   font-size: .95em;
   font-family: Arial;
 }
-/* line 62, ../sass/news_detail.scss */
+/* line 66, ../sass/news_detail.scss */
 .content time {
   display: block;
   float: left;
   border-right: 1px solid #98836c;
   padding-right: 5px;
 }
-/* line 69, ../sass/news_detail.scss */
+/* line 73, ../sass/news_detail.scss */
 .content h1 {
   display: block;
   /*float: right;*/
@@ -72,7 +77,7 @@
   vertical-align: top;
   line-height: 1.7em;
 }
-/* line 80, ../sass/news_detail.scss */
+/* line 84, ../sass/news_detail.scss */
 .content hr {
   float: left;
   width: 100%;
@@ -86,30 +91,30 @@
   *width: 0;
   *margin: 0;
 }
-/* line 94, ../sass/news_detail.scss */
+/* line 98, ../sass/news_detail.scss */
 .content article p {
   margin-top: 15px;
 }
-/* line 98, ../sass/news_detail.scss */
+/* line 102, ../sass/news_detail.scss */
 .content .controls {
   list-style: none;
   margin-top: 30px;
 }
-/* line 102, ../sass/news_detail.scss */
+/* line 106, ../sass/news_detail.scss */
 .content .controls li {
   float: left;
   display: block;
   font-size: .85em;
   overflow: hidden;
 }
-/* line 108, ../sass/news_detail.scss */
+/* line 112, ../sass/news_detail.scss */
 .content .controls li.back {
   width: 190px;
   height: 48px;
   background: url("../images/news/btn_back.png") top no-repeat;
   margin-right: 5px;
 }
-/* line 114, ../sass/news_detail.scss */
+/* line 118, ../sass/news_detail.scss */
 .content .controls li.back a {
   color: #b3a18e;
   display: inline-block;
@@ -118,18 +123,18 @@
   margin-top: 5px;
   text-decoration: none;
 }
-/* line 123, ../sass/news_detail.scss */
+/* line 127, ../sass/news_detail.scss */
 .content .controls li.back:hover {
   background-position: bottom;
 }
-/* line 128, ../sass/news_detail.scss */
+/* line 132, ../sass/news_detail.scss */
 .content .controls li.next {
   width: 190px;
   height: 48px;
   background: url("../images/news/btn_next.png") top no-repeat;
   margin-left: 5px;
 }
-/* line 134, ../sass/news_detail.scss */
+/* line 138, ../sass/news_detail.scss */
 .content .controls li.next a {
   color: #b3a18e;
   display: inline-block;
@@ -138,16 +143,16 @@
   margin-top: 5px;
   text-decoration: none;
 }
-/* line 143, ../sass/news_detail.scss */
+/* line 147, ../sass/news_detail.scss */
 .content .controls li.next:hover {
   background-position: bottom;
 }
-/* line 148, ../sass/news_detail.scss */
+/* line 152, ../sass/news_detail.scss */
 .content .controls li.list {
   width: 63px;
   height: 48px;
 }
-/* line 152, ../sass/news_detail.scss */
+/* line 156, ../sass/news_detail.scss */
 .content .controls li.list a {
   display: block;
   width: 63px;
@@ -159,7 +164,7 @@
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 158, ../sass/news_detail.scss */
+/* line 162, ../sass/news_detail.scss */
 .content .controls li.list a:hover {
   background-position: bottom;
 }

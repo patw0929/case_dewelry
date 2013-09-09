@@ -36,6 +36,10 @@ $border-color: #e1dcd3;
             display: inline-block;
             *display: inline;
             margin-left: 8px;
+            width:115px;
+            img{
+	            width:115px;
+            }
         }
 
         .focus {

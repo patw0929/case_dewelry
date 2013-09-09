@@ -47,6 +47,7 @@ div.product_pic {
         img {
             border: none;
             display: block;
+            width:66px;
         }
     }
     
@@ -101,7 +102,7 @@ div.product_info {
             font-size: 12px;
             line-height: 24px;
             border-bottom: 1px dotted rgb(186, 180, 170);
-            
+            position: relative;
             div.product_spec_text_zone_left {
                 
                 span {
@@ -110,6 +111,7 @@ div.product_info {
                         display: inline-block;
                         width: 90px;
                         text-align: right;
+                        vertical-align: top;
                     }
                     
                     &.sub_text{
@@ -121,8 +123,9 @@ div.product_info {
                 }
             }
             div.product_spec_text_zone_right {
-                float: right;
-                margin-top: -96px;
+                position:absolute;
+                top:0;
+                right:0;
                 width: 180px;
                 
                 span {
@@ -136,7 +139,7 @@ div.product_info {
                     &.sub_text{
 	                    display:inline-block;
 	                    
-	                    width:80px;
+	                    width:90px;
 	                    vertical-align: top;
                     }
                 }

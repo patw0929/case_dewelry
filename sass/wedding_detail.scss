@@ -47,6 +47,7 @@ div.product_pic {
         img {
             border: none;
             display: block;
+            width:66px;
         }
     }
     
@@ -138,7 +139,7 @@ div.product_info {
                     &.sub_text{
 	                    display:inline-block;
 	                    
-	                    width:80px;
+	                    width:90px;
 	                    vertical-align: top;
                     }
                 }
@@ -167,7 +168,6 @@ div.product_info {
     
     /*更多商品*/
     div.product_more {
-        
         clear:both;
         width:520px;
         height: 100px;
