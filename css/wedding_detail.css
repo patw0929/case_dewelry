@@ -24,6 +24,7 @@ div.product_pic #nav {
 }
 /* line 25, ../sass/wedding_detail.scss */
 div.product_pic #nav li {
+  position: relative;
   width: 66px;
   margin: 8px;
   list-style: none;
@@ -31,28 +32,37 @@ div.product_pic #nav li {
   *float: left;
   border: 1px solid #d4cdc8;
 }
-/* line 34, ../sass/wedding_detail.scss */
+/* line 35, ../sass/wedding_detail.scss */
 div.product_pic #nav a {
   width: 66px;
   display: block;
 }
-/* line 38, ../sass/wedding_detail.scss */
+/* line 39, ../sass/wedding_detail.scss */
 div.product_pic #nav a:focus {
   outline: none;
 }
-/* line 43, ../sass/wedding_detail.scss */
-div.product_pic #nav li.activeSlide {
-  background: url("../images/jewelry_detail/small_icon_bg.png");
+/* line 45, ../sass/wedding_detail.scss */
+div.product_pic #nav li.activeSlide img.foreground {
+  display: block;
 }
-/* line 47, ../sass/wedding_detail.scss */
+/* line 51, ../sass/wedding_detail.scss */
 div.product_pic #nav img {
   border: none;
   display: block;
   width: 66px;
 }
+/* line 55, ../sass/wedding_detail.scss */
+div.product_pic #nav img.foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 66px;
+  height: 70px;
+  display: none;
+}
 
 /*產品資訊*/
-/* line 57, ../sass/wedding_detail.scss */
+/* line 69, ../sass/wedding_detail.scss */
 div.product_info {
   margin-top: 50px;
   color: #968771;
@@ -62,26 +72,26 @@ div.product_info {
   /*更多商品*/
   /*fb及back*/
 }
-/* line 60, ../sass/wedding_detail.scss */
+/* line 72, ../sass/wedding_detail.scss */
 div.product_info h1.title {
   text-align: center;
   font-size: 1.2em;
 }
-/* line 65, ../sass/wedding_detail.scss */
+/* line 77, ../sass/wedding_detail.scss */
 div.product_info img.title_hr {
   width: 396px;
   display: block;
   margin: -20px auto 0 auto;
 }
-/* line 72, ../sass/wedding_detail.scss */
+/* line 84, ../sass/wedding_detail.scss */
 div.product_info div.product_desc {
   margin-top: 20px;
 }
-/* line 75, ../sass/wedding_detail.scss */
+/* line 87, ../sass/wedding_detail.scss */
 div.product_info div.product_desc div.product_desc_title_zone {
   width: 77px;
 }
-/* line 79, ../sass/wedding_detail.scss */
+/* line 91, ../sass/wedding_detail.scss */
 div.product_info div.product_desc div.product_desc_text_zone {
   float: right;
   width: 410px;
@@ -90,15 +100,15 @@ div.product_info div.product_desc div.product_desc_text_zone {
   line-height: 24px;
   border-bottom: 1px dotted #bab4aa;
 }
-/* line 91, ../sass/wedding_detail.scss */
+/* line 103, ../sass/wedding_detail.scss */
 div.product_info div.product_spec {
   clear: both;
 }
-/* line 94, ../sass/wedding_detail.scss */
+/* line 106, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_title_zone {
   width: 77px;
 }
-/* line 98, ../sass/wedding_detail.scss */
+/* line 110, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone {
   float: right;
   width: 410px;
@@ -108,7 +118,7 @@ div.product_info div.product_spec div.product_spec_text_zone {
   border-bottom: 1px dotted #bab4aa;
   position: relative;
 }
-/* line 109, ../sass/wedding_detail.scss */
+/* line 121, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_left span.sub_title {
   font-weight: bold;
   display: inline-block;
@@ -116,41 +126,39 @@ div.product_info div.product_spec div.product_spec_text_zone div.product_spec_te
   text-align: right;
   vertical-align: top;
 }
-/* line 117, ../sass/wedding_detail.scss */
+/* line 129, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_left span.sub_text {
   display: inline-block;
-  width: 150px;
+  width: 140px;
   vertical-align: top;
 }
-/* line 125, ../sass/wedding_detail.scss */
+/* line 137, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_right {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 180px;
+  float: right;
 }
-/* line 132, ../sass/wedding_detail.scss */
+/* line 142, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_right span.sub_title {
   display: inline-block;
   font-weight: bold;
   width: 90px;
   text-align: right;
 }
-/* line 139, ../sass/wedding_detail.scss */
+/* line 149, ../sass/wedding_detail.scss */
 div.product_info div.product_spec div.product_spec_text_zone div.product_spec_text_zone_right span.sub_text {
   display: inline-block;
   width: 90px;
   vertical-align: top;
 }
-/* line 152, ../sass/wedding_detail.scss */
+/* line 162, ../sass/wedding_detail.scss */
 div.product_info div.product_note {
   clear: both;
 }
-/* line 155, ../sass/wedding_detail.scss */
+/* line 165, ../sass/wedding_detail.scss */
 div.product_info div.product_note div.product_note_title_zone {
   width: 77px;
 }
-/* line 159, ../sass/wedding_detail.scss */
+/* line 169, ../sass/wedding_detail.scss */
 div.product_info div.product_note div.product_note_text_zone {
   float: right;
   width: 410px;
@@ -159,20 +167,20 @@ div.product_info div.product_note div.product_note_text_zone {
   line-height: 24px;
   border-bottom: 1px dotted #bab4aa;
 }
-/* line 170, ../sass/wedding_detail.scss */
+/* line 180, ../sass/wedding_detail.scss */
 div.product_info div.product_more {
   clear: both;
   width: 520px;
   height: 100px;
   padding-top: 10px;
 }
-/* line 175, ../sass/wedding_detail.scss */
+/* line 185, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_title_zone {
   width: 77px;
   text-align: center;
   line-height: 100px;
 }
-/* line 182, ../sass/wedding_detail.scss */
+/* line 192, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone {
   float: right;
   width: 440px;
@@ -183,12 +191,12 @@ div.product_info div.product_more div.product_more_text_zone {
   height: 100px;
   /* Tiny Carousel */
 }
-/* line 192, ../sass/wedding_detail.scss */
+/* line 202, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 {
   height: 100%;
   overflow: hidden;
 }
-/* line 196, ../sass/wedding_detail.scss */
+/* line 206, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .viewport {
   float: left;
   width: 360px;
@@ -197,7 +205,7 @@ div.product_info div.product_more div.product_more_text_zone #slider1 .viewport 
   position: relative;
   margin: 0 15px;
 }
-/* line 205, ../sass/wedding_detail.scss */
+/* line 215, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .buttons {
   background: url("../images/jewelry_detail/arrow_combine.png") no-repeat scroll 0 0 transparent;
   display: block;
@@ -210,16 +218,16 @@ div.product_info div.product_more div.product_more_text_zone #slider1 .buttons {
   overflow: hidden;
   position: relative;
 }
-/* line 219, ../sass/wedding_detail.scss */
+/* line 229, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .next {
   background-position: 0 0;
   margin: 12px 0 0 0px;
 }
-/* line 224, ../sass/wedding_detail.scss */
+/* line 234, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .disable {
   visibility: hidden;
 }
-/* line 228, ../sass/wedding_detail.scss */
+/* line 238, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .overview {
   list-style: none;
   position: absolute;
@@ -229,25 +237,25 @@ div.product_info div.product_more div.product_more_text_zone #slider1 .overview 
   left: 0;
   top: 0;
 }
-/* line 238, ../sass/wedding_detail.scss */
+/* line 248, ../sass/wedding_detail.scss */
 div.product_info div.product_more div.product_more_text_zone #slider1 .overview li {
   float: left;
   margin-right: 10px;
   height: 80px;
   width: 80px;
 }
-/* line 250, ../sass/wedding_detail.scss */
+/* line 260, ../sass/wedding_detail.scss */
 div.product_info div.fb_back {
   height: 70px;
   margin-top: 20px;
 }
-/* line 253, ../sass/wedding_detail.scss */
+/* line 263, ../sass/wedding_detail.scss */
 div.product_info div.fb_back div.back_link {
   float: right;
   width: 63px;
   height: 48px;
 }
-/* line 258, ../sass/wedding_detail.scss */
+/* line 268, ../sass/wedding_detail.scss */
 div.product_info div.fb_back div.back_link a {
   display: block;
   width: 63px;
@@ -259,11 +267,11 @@ div.product_info div.fb_back div.back_link a {
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 264, ../sass/wedding_detail.scss */
+/* line 274, ../sass/wedding_detail.scss */
 div.product_info div.fb_back div.back_link a:hover {
   background-position: bottom;
 }
-/* line 269, ../sass/wedding_detail.scss */
+/* line 279, ../sass/wedding_detail.scss */
 div.product_info div.fb_back div.fb-like {
   margin-top: 10px;
 }

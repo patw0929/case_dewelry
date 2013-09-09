@@ -23,6 +23,7 @@ div.product_pic {
         margin-top: 30px;
 
         li {
+        		position: relative;
             width: 66px;
             margin: 8px;
             list-style: none;
@@ -41,13 +42,24 @@ div.product_pic {
         }
         
         li.activeSlide {
-            background: url("../images/jewelry_detail/small_icon_bg.png");
+          img.foreground{
+        		display: block;
+	        	
+        	}
         }
         
         img {
             border: none;
             display: block;
             width:66px;
+            &.foreground{
+	            position: absolute;
+	            left:0;
+	            top:0;
+	            width:66px;
+	            height:70px;
+	            display:none;
+            }
         }
     }
     
@@ -117,16 +129,14 @@ div.product_info {
                     &.sub_text{
 	                    display:inline-block;
 	                    
-	                    width:150px;
+	                    width:140px;
 	                    vertical-align: top;
                     }
                 }
             }
             div.product_spec_text_zone_right {
-                position:absolute;
-                top:0;
-                right:0;
                 width: 180px;
+                float:right;
                 
                 span {
                     &.sub_title {
